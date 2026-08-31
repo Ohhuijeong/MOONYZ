@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+html,
+body {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
+}
+
+section {
+    padding: 0;
+}
+
+.ico-shop {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.horizontal-scroll {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.page-wrap {
+    display: flex;
+    width: max-content;
+    gap: 20px;
+}
+
+.uni-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uni-inner img {
+    width: 1440px;
+    height: 712px;
+}
+
+.page,
+.pages {
+    width: 1920px;
+    min-width: 1920px;
+    height: 910px;
+    flex: 0 0 1920px;
+    background-color: #ECE2D7;
+}
+
+.pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pages img {
+    width: 1292px;
+    height: 800px;
+}
