@@ -1,0 +1,25 @@
+@charset "utf-8";
+@import url(fonts.css);
+@import url(reset.css);
+
+/* ===cursor=== */
+body {
+    cursor: url(../img/cursor/cursor_normal.png)0 0, auto;
+}
+
+/* ===contents-visual=== */
+#contents-visual {
+    width: 100%;
+    height: 2500px;
+    background: url(../img/contents/contentsBG.png) no-repeat top/cover;
+    position: relative;
+}
+
+/* ===gnb=== */
+#header #gnbBtn {
+    height: 36px;
+    width: 103px;
+}
+
+
+
