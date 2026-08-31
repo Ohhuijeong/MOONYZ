@@ -1,0 +1,163 @@
+/* ================= 물줄기(spout) SVG ================= */
+.whale-spout {
+    position: absolute;
+    left: var(--spout-left);
+    top: var(--spout-top);
+    width: 110px;
+    height: 118px;
+    transform: translate(-50%, -88%);
+    pointer-events: none;
+    z-index: 3;
+    overflow: visible;
+}
+
+/* 물줄기 가닥: 밑동부터 함께 뻗어나가며 위로 갈수록 벌어짐 */
+.stream-line {
+    fill: none;
+    stroke-linecap: round;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    opacity: 0;
+}
+
+.stream-line.s0 {
+    stroke: rgba(220, 238, 255, 0.95);
+    stroke-width: 5;
+}
+
+.stream-line.s1,
+.stream-line.sm1 {
+    stroke: rgba(220, 238, 255, 0.9);
+    stroke-width: 3.6;
+}
+
+.stream-line.s2,
+.stream-line.sm2 {
+    stroke: rgba(220, 238, 255, 0.85);
+    stroke-width: 3;
+}
+
+.stream-line.s3,
+.stream-line.sm3 {
+    stroke: rgba(220, 238, 255, 0.8);
+    stroke-width: 2.4;
+}
+
+.main-characters:hover .stream-line {
+    animation: drawStream 1.2s ease-out infinite;
+}
+
+.main-characters:hover .stream-line.s0 {
+    animation-delay: 0s;
+}
+
+.main-characters:hover .stream-line.s1,
+.main-characters:hover .stream-line.sm1 {
+    animation-delay: 0.02s;
+}
+
+.main-characters:hover .stream-line.s2,
+.main-characters:hover .stream-line.sm2 {
+    animation-delay: 0.04s;
+}
+
+.main-characters:hover .stream-line.s3,
+.main-characters:hover .stream-line.sm3 {
+    animation-delay: 0.06s;
+}
+
+@keyframes drawStream {
+    0% {
+        stroke-dashoffset: 100;
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    55% {
+        stroke-dashoffset: 0;
+        opacity: 0.9;
+    }
+
+    82% {
+        opacity: 0.3;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        opacity: 0;
+    }
+}
+
+.droplet {
+    fill: rgba(220, 238, 255, 0.95);
+    opacity: 0;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+.main-characters:hover .droplet {
+    animation-name: dropletFade;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes dropletFade {
+    0% {
+        opacity: 0;
+        transform: translate(0, 0) scale(0.5);
+    }
+
+    10% {
+        opacity: 1;
+        transform: translate(0, 0) scale(1);
+    }
+
+    40% {
+        opacity: 0.9;
+        transform: translate(calc(var(--dx) * 0.4), -2px) scale(1.15);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(var(--dx), -6px) scale(1.7);
+    }
+}
+
+.droplet.d0 {
+    animation-delay: 0.55s;
+    --dx: 0px;
+}
+
+.droplet.d1 {
+    animation-delay: 0.57s;
+    --dx: 6px;
+}
+
+.droplet.dm1 {
+    animation-delay: 0.57s;
+    --dx: -6px;
+}
+
+.droplet.d2 {
+    animation-delay: 0.59s;
+    --dx: 10px;
+}
+
+.droplet.dm2 {
+    animation-delay: 0.59s;
+    --dx: -10px;
+}
+
+.droplet.d3 {
+    animation-delay: 0.61s;
+    --dx: 13px;
+}
+
+.droplet.dm3 {
+    animation-delay: 0.61s;
+    --dx: -13px;
+}
