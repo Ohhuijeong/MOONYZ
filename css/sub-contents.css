@@ -21,5 +21,25 @@ body {
     width: 103px;
 }
 
+/* ===contents=== */
+.contents-card {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 35%;
 
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 58px 80px;
 
+}
+.contents-card a:hover {
+    transform: translateY(-30px);
+    transition: .4s;
+}
+/* .contents-grid img {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+} */
