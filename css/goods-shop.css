@@ -78,6 +78,7 @@ header .header-top {
 }
 /* //header */
 
+/* main-slide */
 #main-slide {
     padding-block: 30px;
 }
@@ -104,4 +105,34 @@ header .header-top {
 
 .swiper .swiper-pagination {
     opacity: 0;
+}
+/* //main-slide */
+
+/* recommend-products */
+#recommend-products .recommend-list {
+    display: flex;
+    gap: 18px;
+    justify-content: space-between;
+}
+
+.recommend-list .pic-area {
+    width: 100%;
+    height: 450px;
+    position: relative;
+}
+
+.pic-area .tag {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 6px 12px;
+    background: #EDF3B8;
+}
+
+.pic-area .tag-b {
+    background-color: #D3E1F4;
+}
+
+.pic-area .tag-p {
+    background-color: #FFE0DD;
 }
