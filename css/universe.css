@@ -58,9 +58,17 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .pages img {
     width: 1292px;
     height: 800px;
+}
+
+.pages .text-area {
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translateX(-50%);
 }
