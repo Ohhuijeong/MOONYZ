@@ -18,3 +18,10 @@ var swiper = new Swiper('.mySwiper', {
 
 
 });
+
+var charactersSwiper = new Swiper('.charactersSwiper', {
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    centeredSlidesBounds: true,
+    spaceBetween: 30,
+});
