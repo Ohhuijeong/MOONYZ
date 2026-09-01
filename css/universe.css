@@ -68,7 +68,7 @@ section {
 
 .pages .text-area {
     position: absolute;
-    top: 17%;
+    top: 14.5%;
     left: 50%;
     transform: translateX(-50%);
 }
