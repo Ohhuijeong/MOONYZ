@@ -2,6 +2,11 @@
 @import url(reset.css);
 @import url(fonts.css);
 
+body {
+    color: #222;
+    cursor: url("../img/cursor/cursor_normal.png") 0 0, auto;
+}
+
 section {
     padding-block: 130px;
 }
@@ -65,7 +70,7 @@ header .header-inner {
     top: 0;
     left: 0;
     transform: translateX(-100%);
-    transition: 1s;
+    transition: 0.5s;
     z-index: 11;
 }
 
@@ -166,7 +171,8 @@ h2,
 .book-text {
     font-family: 'GangwonEducationHyunokSam';
     font-size: 30px;
-    line-height: 1.4%;
+    line-height: 1.2;
+    text-align: center;
 }
 
 .contents-text {

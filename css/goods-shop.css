@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+#header {
+    height: 180px;
+}
+
+#header .goods-shop-header-inner {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+/* header-top */
+header .header-top {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header-top .ico-area {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* header-bottom */
+.header-bottom {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-bottom .goods-shop-gnb ul {
+    display: flex;
+    gap: 10px;
+}
+
+.goods-shop-gnb ul a {
+    width: 80px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.goods-shop-gnb ul .on {
+    background: #ffe0dd;
+}
+
+.goods-shop-gnb ul a:hover {
+    background: #ffe0dd;
+}
+
+.header-bottom .search-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.search-area .search-input {
+    height: 30px;
+    width: 280px;
+    padding-inline: 10px;
+}
+
+.search-area .search-btn {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 10px;
+}
+/* //header */
+
+/* main-slide */
+#main-slide {
+    padding-block: 30px;
+}
+
+#main-slide .swiper .swiper-button-next,
+#main-slide .swiper .swiper-button-prev {
+    background: #fff;
+    border-radius: 50%;
+    opacity: 1;
+    right: 20px;
+}
+
+#main-slide .swiper .swiper-button-prev {
+    right: auto;
+    left: 20px;
+}
+
+.swiper-button-next .swiper-navigation-icon,
+.swiper-button-prev .swiper-navigation-icon {
+    width: 24px;
+    height: 24px;
+    color: #333;
+}
+
+.swiper .swiper-pagination {
+    opacity: 0;
+}
+/* //main-slide */
+
+/* recommend-products */
+#recommend-products .recommend-list {
+    display: flex;
+    gap: 18px;
+    justify-content: space-between;
+}
+
+.recommend-list .pic-area {
+    width: 100%;
+    height: 450px;
+    position: relative;
+}
+
+.pic-area .tag {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 6px 12px;
+    background: #EDF3B8;
+}
+
+.pic-area .tag-b {
+    background-color: #D3E1F4;
+}
+
+.pic-area .tag-p {
+    background-color: #FFE0DD;
+}

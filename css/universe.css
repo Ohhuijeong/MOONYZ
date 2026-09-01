@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+html,
+body {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
+}
+
+section {
+    padding: 0;
+}
+
+.ico-shop {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.horizontal-scroll {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.page-wrap {
+    display: flex;
+    width: max-content;
+    gap: 20px;
+}
+
+.uni-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uni-inner img {
+    width: 1440px;
+    height: 712px;
+}
+
+.page,
+.pages {
+    width: 1920px;
+    min-width: 1920px;
+    height: 910px;
+    flex: 0 0 1920px;
+    background-color: #ECE2D7;
+}
+
+.pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.pages img {
+    width: 1292px;
+    height: 800px;
+}
+
+.pages .text-area {
+    position: absolute;
+    top: 14.5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.page-wrap .page-next {
+    position: relative;
+    width: 200px;
+    height: 180px;
+}
+
+.page-wrap .page-next a img {
+    width: 100%;
+    position: absolute;
+    top: 450px;
+    transform: translateY(-50%);
+    left: -115px;
+    display: block;
+}
