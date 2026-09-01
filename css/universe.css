@@ -72,3 +72,18 @@ section {
     left: 50%;
     transform: translateX(-50%);
 }
+
+.page-wrap .page-next {
+    position: relative;
+    width: 200px;
+    height: 180px;
+}
+
+.page-wrap .page-next a img {
+    width: 100%;
+    position: absolute;
+    top: 450px;
+    transform: translateY(-50%);
+    left: -115px;
+    display: block;
+}
