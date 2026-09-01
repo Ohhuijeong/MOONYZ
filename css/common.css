@@ -4,7 +4,7 @@
 
 body {
     color: #222;
-    cursor: url(../img/cursor/cursor_normal.png) 0 0 auto;
+    cursor: url("../img/cursor/cursor_normal.png") 0 0, auto;
 }
 
 section {
@@ -171,7 +171,8 @@ h2,
 .book-text {
     font-family: 'GangwonEducationHyunokSam';
     font-size: 30px;
-    line-height: 1.4;
+    line-height: 1.2;
+    text-align: center;
 }
 
 .contents-text {
