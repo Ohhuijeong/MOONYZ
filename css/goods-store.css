@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+section .product-name {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
 #header {
     height: 180px;
 }
@@ -76,12 +82,14 @@ header .header-top {
     height: 20px;
     right: 10px;
 }
+
 /* //header */
 
 /* main-slide */
 #main-slide {
     padding-block: 30px;
 }
+
 
 #main-slide .swiper .swiper-button-next,
 #main-slide .swiper .swiper-button-prev {
@@ -106,6 +114,7 @@ header .header-top {
 .swiper .swiper-pagination {
     opacity: 0;
 }
+
 /* //main-slide */
 
 /* recommend-products */
@@ -119,6 +128,7 @@ header .header-top {
     width: 100%;
     height: 450px;
     position: relative;
+    margin-bottom: 20px;
 }
 
 .pic-area .tag {
@@ -135,4 +145,102 @@ header .header-top {
 
 .pic-area .tag-p {
     background-color: #FFE0DD;
+}
+
+/* character-slide */
+/* #charactersSlide {
+    background: #F3F3F3;
+    height: 550px;
+    display: flex;
+    align-items: center;
+}
+
+#charactersSlide .charactersSwiper {
+    height: 375px;
+    padding-inline: 30px;
+}
+
+#characterSlide .swiper-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+#charactersSlide .charactersSwiper .swiper-slide {
+    width: 255px;
+    height: 255px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#charactersSlide .swiper-slide .img-area {
+    width: 255px;
+    height: 255px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#charactersSlide .charactersSwiper .swiper-slide-active {
+    width: 375px;
+    height: 375px;
+}
+
+#charactersSlide .swiper-slide-active img {
+    transform: scale(1.2);
+} */
+
+/* character-slide */
+#charactersSlide {
+    width: 100%;
+    height: 500px;
+
+    background: #F3F3F3;
+
+    display: flex;
+    align-items: center;
+}
+
+#charactersSlide .charactersSwiper {
+    width: 100%;
+    height: 375px;
+
+    overflow: hidden;
+}
+
+#charactersSlide .charactersSwiper .swiper-wrapper {
+    align-items: center;
+}
+
+/* slide 크기는 항상 동일 */
+#charactersSlide .charactersSwiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 실제 원 */
+#charactersSlide .img-area {
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    transition: transform 0.5s ease;
+}
+
+/* 캐릭터 이미지 */
+#charactersSlide .character-img img {
+    transition: transform 0.5s ease;
+}
+
+/* active에서는 slide가 아니라 내부 원을 확대 */
+#charactersSlide .swiper-slide-active .img-area {
+    transform: scale(1.5);
 }
