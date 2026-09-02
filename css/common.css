@@ -142,7 +142,8 @@ header .header-inner {
 
 /* 커서 */
 button:hover,
-a:hover {
+a:hover,
+.hover {
     cursor: url(../img/cursor/cursor_click.png) 0 0, pointer;
 }
 
