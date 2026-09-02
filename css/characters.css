@@ -51,6 +51,7 @@ section {
     width: 225px;
     height: 50px;
     position: absolute;
+    z-index: 20;
     top: 150px;
     left: 50%;
     transform: translateX(-50%);
@@ -58,52 +59,140 @@ section {
 
 .profile-wrap {
     position: relative;
-
     width: 2648px;
     height: 495px;
-
+    /* Flex 컨테이너 안에서 해당 요소의 크기가 줄어들지 않게 하는 것 */
     flex-shrink: 0;
 }
 
 .profile-list {
     position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 45px;
+    top: 280px;
+    left: 560px;
 }
 
 /* 액자 */
-.profile-wrap .profile-frame {
+.profile-list .profile-frame {
     position: relative;
+    width: 219px;
+    height: 229px;
     z-index: 10;
     flex-shrink: 0;
-    width: 294px;
-    height: 301px;
-    background: url("../img/characters/profile_frame/frame1.png") no-repeat center / cover;
+    background: url("../img/characters/profile_frame/frame2.png") no-repeat center/cover;
+    background-size: contain;
 }
 
-.profile-wrap .profile-frame:nth-child(2) {
-    background-image: url(../img/characters/profile_frame/frame2.png);
-    width: 218px;
-    height: 229px;
+.profile-list .profile-frame.gomi {
+    background-image: url("../img/characters/profile_frame/frame1.png");
+    width: 296px;
+    height: 301px;
 }
 
 .profile-frame .characters-area {
-    background-color: #c8c6c6;
-    width: 186px;
-    height: 156px;
+    width: 138px;
+    height: 116px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -40%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.profile-frame .characters-area.gomi {
+.profile-frame .characters-area.c1 {
     background-color: #D3E1F4;
+    width: 186px;
+    height: 156px;
 }
 
 .profile-frame .characters-area.c2 {
-    background-color: aqua;
+    background-color: #FBD6BB;
+}
+
+.profile-frame .characters-area.c3 {
+    background-color: #EDF3B8;
+}
+
+.profile-frame .characters-area.c4 {
+    background-color: #FFE0DD;
+}
+
+.profile-frame .characters-area.c5 {
+    background-color: #F0EEE8;
+}
+
+.profile-frame .characters-area.c6 {
+    background-color: #F3FDBF;
+}
+
+.profile-frame .characters-area.c7 {
+    background-color: #EBE7DD;
+}
+
+.profile-frame .characters-area.c8 {
+    background-color: #FFECCD;
+}
+
+.profile-frame .characters-area.c9 {
+    background-color: #FFF3C4;
+}
+
+.profile-frame .characters-area.c10 {
+    background-color: #E8F8FF;
+}
+
+.characters-area .character {
+    width: 106.2px;
+    height: 89.4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.characters-area .character.gomi {
+    width: 144px;
+    height: 121px;
+}
+
+.characters-area .character>img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: center;
+    transition: transform 0.2s ease;
+}
+
+.character.waddle img {
+    animation: waddle 0.85s ease-in-out infinite;
+    transform-origin: bottom center;
+}
+
+@keyframes waddle {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    25% {
+        transform: rotate(-5deg)
+    }
+
+    50% {
+        transform: rotate(0deg)
+    }
+
+    75% {
+        transform: rotate(5deg)
+    }
+
+    100% {
+        transform: rotate(0deg)
+    }
 }
 
 .profile-frame .characters-name {
@@ -117,4 +206,57 @@ section {
 
 .profile-frame .characters-name.gomi {
     font-size: 30px;
+}
+
+/* 모달 전체 영역 */
+.modal-modal {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.6);
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+/* 모달이 열렸을 때 */
+.modal-modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* 가운데 모달 */
+.modal {
+    position: relative;
+    width: 500px;
+    max-width: 80%;
+}
+
+/* 이미지 */
+.modal-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* 닫기 버튼 */
+.modal .close-btn {
+    position: absolute;
+    top: -30px;
+    right: 3px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    font-size: 25px;
+    cursor: pointer;
 }
