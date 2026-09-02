@@ -124,14 +124,14 @@ header .header-top {
     justify-content: space-between;
 }
 
-.recommend-list .pic-area {
+.recommend-list .recommend-pic-area {
     width: 100%;
     height: 450px;
     position: relative;
     margin-bottom: 20px;
 }
 
-.pic-area .tag {
+.recommend-pic-area .tag {
     position: absolute;
     top: 20px;
     left: 20px;
@@ -139,57 +139,13 @@ header .header-top {
     background: #EDF3B8;
 }
 
-.pic-area .tag-b {
+.recommend-pic-area .tag-b {
     background-color: #D3E1F4;
 }
 
-.pic-area .tag-p {
+.recommend-pic-area .tag-p {
     background-color: #FFE0DD;
 }
-
-/* character-slide */
-/* #charactersSlide {
-    background: #F3F3F3;
-    height: 550px;
-    display: flex;
-    align-items: center;
-}
-
-#charactersSlide .charactersSwiper {
-    height: 375px;
-    padding-inline: 30px;
-}
-
-#characterSlide .swiper-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;}
-
-#charactersSlide .charactersSwiper .swiper-slide {
-    width: 255px;
-    height: 255px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#charactersSlide .swiper-slide .img-area {
-    width: 255px;
-    height: 255px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#charactersSlide .charactersSwiper .swiper-slide-active {
-    width: 375px;
-    height: 375px;
-}
-
-#charactersSlide .swiper-slide-active img {
-    transform: scale(1.2);
-} */
 
 /* character-slide */
 #charactersSlide {
@@ -243,4 +199,43 @@ header .header-top {
 /* active에서는 slide가 아니라 내부 원을 확대 */
 #charactersSlide .swiper-slide-active .img-area {
     transform: scale(1.5);
+}
+/* //캐릭터슬라이드 */
+
+/* best products, new products 공통 */
+section .product-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.product-list>li {
+    width: 345px;
+}
+
+.product-list .pic-area {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.pic-area .like-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.product-list .product-name {
+    font-size: 20px;
+}
+
+section .all-view-btn {
+    width: 250px;
+    height: 40px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin: 0 auto;
+    font-family: 'Suit';
+    font-size: 14px;
+    font-weight: 800;
 }

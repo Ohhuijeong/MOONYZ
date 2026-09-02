@@ -28,7 +28,6 @@ var charactersSwiper = new Swiper('.charactersSwiper', {
 
     spaceBetween: requiredGap,
     roundLengths: true,
-    grabCursor: true,
 
     loop: true,
     speed: 500,
