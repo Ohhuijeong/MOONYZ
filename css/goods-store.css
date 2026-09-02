@@ -90,6 +90,7 @@ header .header-top {
     padding-block: 30px;
 }
 
+
 #main-slide .swiper .swiper-button-next,
 #main-slide .swiper .swiper-button-prev {
     background: #fff;
@@ -147,10 +148,10 @@ header .header-top {
 }
 
 /* character-slide */
-#charactersSlide {
+/* #charactersSlide {
     background: #F3F3F3;
     height: 550px;
-    display:flex;
+    display: flex;
     align-items: center;
 }
 
@@ -159,13 +160,26 @@ header .header-top {
     padding-inline: 30px;
 }
 
+#characterSlide .swiper-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
 #charactersSlide .charactersSwiper .swiper-slide {
+    width: 255px;
+    height: 255px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#charactersSlide .swiper-slide .img-area {
     width: 255px;
     height: 255px;
     border-radius: 50%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 #charactersSlide .charactersSwiper .swiper-slide-active {
@@ -173,6 +187,60 @@ header .header-top {
     height: 375px;
 }
 
-.swiper-slide-active img {
+#charactersSlide .swiper-slide-active img {
     transform: scale(1.2);
+} */
+
+/* character-slide */
+#charactersSlide {
+    width: 100%;
+    height: 500px;
+
+    background: #F3F3F3;
+
+    display: flex;
+    align-items: center;
+}
+
+#charactersSlide .charactersSwiper {
+    width: 100%;
+    height: 375px;
+
+    overflow: hidden;
+}
+
+#charactersSlide .charactersSwiper .swiper-wrapper {
+    align-items: center;
+}
+
+/* slide 크기는 항상 동일 */
+#charactersSlide .charactersSwiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 실제 원 */
+#charactersSlide .img-area {
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    transition: transform 0.5s ease;
+}
+
+/* 캐릭터 이미지 */
+#charactersSlide .character-img img {
+    transition: transform 0.5s ease;
+}
+
+/* active에서는 slide가 아니라 내부 원을 확대 */
+#charactersSlide .swiper-slide-active .img-area {
+    transform: scale(1.5);
 }
