@@ -169,7 +169,7 @@ section {
 }
 
 .character.waddle img {
-    animation: waddle 0.85s ease-in-out infinite;
+    animation: waddle 0.8s ease-out infinite;
     transform-origin: bottom center;
 }
 
