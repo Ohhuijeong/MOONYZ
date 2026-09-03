@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로젝트 페이지</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/project.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js" defer></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/project.js" defer></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <section id="projectBg">
+            <header id="header" class="header">
+                <div class="header-inner">
+                    <button type="button" id="gnbBtn" class="gnb-btn">
+                        <img src="img/icon/ico_menu_w.png" alt="메뉴 열기">
+                    </button>
+                    <h1 id="logo-p">
+                        <a href="index.html"></a>
+                    </h1>
+                    <div class="ico-shop">
+                        <a href="goods-store.html"><img src="img/icon/ico_shop.png" alt="goodsstore"></a>
+                    </div>
+                </div>
+                <nav class="gnb">
+                    <button type="button" id="closeBtn" class="close-btn"><img src="img/icon/ico_X.png"
+                            alt="메뉴 닫기"></button>
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <img src="img/gnb/gnb-text/home.png" alt="홈">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sub-universe.html">
+                                <img src="img/gnb/gnb-text/universe.png" alt="세계관">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sub-characters.html">
+                                <img src="img/gnb/gnb-text/characters.png" alt="캐릭터">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sub-contents.html">
+                                <img src="img/gnb/gnb-text/contents.png" alt="콘텐츠">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sub-projects.html">
+                                <img src="img/gnb/gnb-text/projects.png" alt="프로젝트">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sub-popup.html">
+                                <img src="img/gnb/gnb-text/popup.png" alt="팝업">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sub-contact.html">
+                                <img src="img/gnb/gnb-text/contact.png" alt="고객센터">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div id="projectSlider">
+                <div class="swiper projectSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide project-slide baseball">
+                            <div class="slide-hover">
+                                <p class="title">Baseball</p>
+                                <button type="button" class="detail-btn">
+                                    <img src="img/icon/ico_view.png" alt="자세히보기">
+                                </button>
+                            </div>
+                            <img src="img/project/slide01.png" alt="무니즈X삼성라이온즈" class="hover">
+                        </div>
+                        <div class="swiper-slide project-slide hover">
+                            <div class="slide-hover">
+                                <p class="title">MOONYZ Motors</p>
+                                <button type="button" class="detail-btn">
+                                    <img src="img/icon/ico_view.png" alt="자세히보기">
+                                </button>
+                            </div>
+                            <img src="img/project/slide02.png" alt="무니즈Xmotors" class="hover">
+                        </div>
+                        <div class="swiper-slide project-slide hover">
+                            <div class="slide-hover">
+                                <p class="title">Museum</p>
+                                <button type="button" class="detail-btn">
+                                    <img src="img/icon/ico_view.png" alt="자세히보기">
+                                </button>
+                            </div>
+                            <img src="img/project/slide03.png" alt="무니즈Xmuseum" class="hover">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
