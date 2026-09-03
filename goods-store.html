@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/goods-store.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js" defer></script>
     <script src="js/common.js" defer></script>
     <script src="js/goods-store.js" defer></script>
@@ -67,13 +68,13 @@
             <div class="inner">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                        <div class="swiper-slide hover">
                             <img src="img/goodsshop/slide01.png" alt="">
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide hover">
                             <img src="img/goodsshop/slide02.png" alt="">
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide hover">
                             <img src="img/goodsshop/slide03.png" alt="">
                         </div>
                     </div>
@@ -90,7 +91,7 @@
                 <ul class="recommend-list">
                     <li>
                         <a href="#">
-                            <div class="recommend-pic-area">
+                            <div class="pic-area">
                                 <img src="img/goodsshop/recommend1.png" alt="모리 터프팅 러그">
                                 <span class="tag tag-g">NEW</span>
                             </div>
@@ -104,7 +105,7 @@
                     </li>
                     <li>
                         <a href="#">
-                            <div class="recommend-pic-area">
+                            <div class="pic-area">
                                 <img src="img/goodsshop/recommend2.png" alt="고미 바디필로우">
                                 <span class="tag tag-b">BEST</span>
                             </div>
@@ -118,7 +119,7 @@
                     </li>
                     <li>
                         <a href="#">
-                            <div class="recommend-pic-area">
+                            <div class="pic-area">
                                 <img src="img/goodsshop/recommend3.png" alt="벼리 말랑이 무드등">
                                 <span class="tag tag-p">SALE</span>
                             </div>
@@ -249,9 +250,84 @@
                         </a>
                     </li>
                 </ul>
-                <button class="all-view-btn">
-                    모두보기
-                </button>
+                <div class="btn-area">
+                    <button class="all-view-btn">
+                        모두보기
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="new-products">
+            <div class="inner">
+                <h2>새로 나왔어요!</h2>
+                <ul class="product-list">
+                    <li>
+                        <a href="#">
+                            <div class="pic-area">
+                                <img src="img/goodsshop/new1.png" alt="">
+                                <button type="button" class="like-btn">
+                                    <img src="img/icon/like.png" alt="찜">
+                                </button>
+                            </div>
+                            <p class="product-name">
+                                무니즈 클리어 케이스
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="pic-area">
+                                <img src="img/goodsshop/new2.png" alt="">
+                                <button type="button" class="like-btn">
+                                    <img src="img/icon/like.png" alt="찜">
+                                </button>
+                            </div>
+                            <p class="product-name">
+                                부기 핸드타월
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="pic-area">
+                                <img src="img/goodsshop/new3.png" alt="">
+                                <button type="button" class="like-btn">
+                                    <img src="img/icon/like.png" alt="찜">
+                                </button>
+                            </div>
+                            <p class="product-name">
+                                모리 터프팅 러그
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="pic-area">
+                                <img src="img/goodsshop/new4.png" alt="">
+                                <button type="button" class="like-btn">
+                                    <img src="img/icon/like.png" alt="찜">
+                                </button>
+                            </div>
+                            <p class="product-name">
+                                범동 포토 엽서카드
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="btn-area">
+                    <button class="all-view-btn">
+                        모두보기
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="seasonSale">
+            <div class="inner">
+                <a href="#">
+                    <img src="img/goodsshop/seasonsale.png" alt="시즌세일 바로가기">
+                </a>
             </div>
         </section>
 

@@ -1,4 +1,7 @@
 @charset "utf-8";
+h2 {
+    letter-spacing: -0.5px;
+}
 
 section .product-name {
     font-size: 24px;
@@ -87,9 +90,8 @@ header .header-top {
 
 /* main-slide */
 #main-slide {
-    padding-block: 30px;
+    padding-block: 0;
 }
-
 
 #main-slide .swiper .swiper-button-next,
 #main-slide .swiper .swiper-button-prev {
@@ -124,11 +126,12 @@ header .header-top {
     justify-content: space-between;
 }
 
-.recommend-list .recommend-pic-area {
+.recommend-list .pic-area {
     width: 100%;
     height: 450px;
     position: relative;
     margin-bottom: 20px;
+    overflow: hidden;
 }
 
 .recommend-pic-area .tag {
@@ -207,7 +210,7 @@ section .product-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .product-list>li {
@@ -216,17 +219,33 @@ section .product-list {
 
 .product-list .pic-area {
     position: relative;
+    height: 345px;
     margin-bottom: 15px;
+    overflow: hidden;
+}
+
+section .pic-area img {
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+section .pic-area:hover>img {
+    transform: scale(1.1);
 }
 
 .pic-area .like-btn {
     position: absolute;
     top: 15px;
     right: 15px;
+    z-index: 100;
 }
 
 .product-list .product-name {
     font-size: 20px;
+}
+
+section .btn-area {
+    text-align: center;
 }
 
 section .all-view-btn {
@@ -234,8 +253,11 @@ section .all-view-btn {
     height: 40px;
     border: 1px solid #333;
     border-radius: 5px;
-    margin: 0 auto;
     font-family: 'Suit';
     font-size: 14px;
     font-weight: 800;
+}
+
+#new-products {
+    padding-top: 0;
 }

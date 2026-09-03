@@ -37,3 +37,24 @@ var charactersSwiper = new Swiper('.charactersSwiper', {
         prevEl: ".characters-prev",
     },
 });
+
+document.addEventListener('click', (e) => {
+    if (e.target.closest('a')) {
+        e.preventDefault();
+    }
+});
+
+//product-list
+$(document).ready(function() {
+    $('.like-btn').on('click', function(e) {
+        e.preventDefault();
+
+        $(this).toggleClass('on')
+
+        if ($(this).hasClass('on')) {
+            $(this).find('img').attr('src', 'img/icon/like-hover.png')
+        } else {
+            $(this).find('img').attr('src', 'img/icon/like.png');
+        }
+    })
+})
