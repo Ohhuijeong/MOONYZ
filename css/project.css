@@ -1,0 +1,72 @@
+@charset "utf-8";
+section {
+    padding: 0;
+}
+
+.ico-shop {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#projectBg {
+    height: 100vh;
+    background: url(../img/project/projectBg-main.png) no-repeat center/cover;
+    position: relative;
+}
+
+/* swiper 영역 */
+#projectSlider .projectSwiper {
+    width: 780px;
+    height: 340px;
+    position: absolute;
+    left: 50%;
+    top: 28.7%;
+    transform: translateX(-50%);
+}
+
+.swiper-slide.project-slide {
+    width: 790px;
+    height: 100%;
+    position: relative;
+}
+
+.project-slide .slide-hover {
+    inset: 0;
+    background: rgba(255,255,255,0.6);
+    position: absolute;
+    display: flex;
+    color: #222;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-slide .slide-hover .detail-btn {
+    width: 130px;
+    height: 55px;
+}
+
+.project-slide>img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#projectSlider .swiper-button-next,
+#projectSlider .swiper-button-prev {
+    position: absolute;
+    right: 450px;
+    top: 49%;
+    transform: translateY(-50%);
+    background: url(../img/icon/ico_project_next.png) no-repeat center/cover;
+    cursor: url(../img/cursor/cursor_click.png) 0 0, pointer;
+}
+
+#projectSlider .swiper-button-prev {
+    right: auto;
+    left: 450px;
+    background-image: url(../img/icon/ico_project_previous.png);
+}
+
+#projectSlider .swiper-navigation-icon {
+    opacity: 0;
+}
