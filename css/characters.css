@@ -20,8 +20,8 @@ section {
 }
 
 .horizontal-scroll {
-    width: 100vw;
-    height: 100vh;
+    /* width: 100vw;
+    height: 100vh; */
     overflow-x: auto;
     overflow-y: hidden;
 }
@@ -82,12 +82,12 @@ section {
     height: 229px;
     z-index: 10;
     flex-shrink: 0;
-    background: url("../img/characters/profile_frame/frame2.png") no-repeat center/cover;
+    background: url("../img/characters/profile_frame/frame_web_small.png") no-repeat center/cover;
     background-size: contain;
 }
 
 .profile-list .profile-frame.gomi {
-    background-image: url("../img/characters/profile_frame/frame1.png");
+    background-image: url("../img/characters/profile_frame/frame_web_big.png");
     width: 296px;
     height: 301px;
 }
