@@ -8,3 +8,8 @@ var projectSwiper = new Swiper('.projectSwiper', {
   },
 });
 
+$(function () {
+  $('.detail-btn').on('click', function() {
+    
+  })
+})

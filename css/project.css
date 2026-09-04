@@ -105,6 +105,11 @@ video {
     background: rgba(0,0,0,0.6);
     position: fixed;
     z-index: 999;
+    display: none;
+}
+
+#detail-board-area.show {
+    display: block;
 }
 
 #detail-board-area .detail-board-frame {
@@ -113,6 +118,24 @@ video {
     padding: 100px 75px 100px;
     background: url(../img/project/projectFrame.png) no-repeat center/contain;
     position: absolute;
+    left: 50%;
+    top: 12%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.baseball-board.show,
+.motors-board.show,
+.museum-board.show {
+    display: block;
+}
+
+.detail-board-frame .xcircle {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 0;
+    right: -40px;
 }
 
 .detail-board-frame ul {
@@ -126,7 +149,7 @@ video {
     height: 520px;
 }
 
-.detail-board-frame ul li:first-child {
+.baseball-board ul li:first-child {
     height: 414px;
 }
 
