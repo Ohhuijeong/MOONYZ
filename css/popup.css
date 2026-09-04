@@ -1,0 +1,26 @@
+section {
+    padding-block: 70px;
+}
+
+i {
+    display: inline-block;
+}
+
+.ico-shop {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.top-contact {
+    background: url(../img/contact/contact_web.png) no-repeat center/cover;
+    height: 600px;
+    padding: 0;
+}
+
+.top-contact h2 {
+    text-align: center;
+    padding-top: 100px;
+    font-family: 'TMoneyDungunbaram';
+    font-size: 32px;
+    font-weight: 800;
+}
