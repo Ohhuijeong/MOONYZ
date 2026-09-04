@@ -7,7 +7,10 @@
     <title>무니즈 고객센터</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/contact.css">
+    <script src="js/jquery-4.0.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
     <script src="js/common.js" defer></script>
+    <script src="js/contact.js" defer></script>
 </head>
 
 <body>
@@ -79,26 +82,20 @@
         </section>
 
         <section class="contact-area">
-            <div class="notice">
-                <a href="">
-                    <h2>공지사항</h2>
-                    <img src="img/contact/ico_notice.png" alt="notice_icon">
-                    <img src="img/contact/Gomi_notice.png" alt="공지사항">
-                </a>
-            </div>
-            <div class="consult">
-                <a href="">
-                    <h2>상담하기</h2>
-                    <p>※ 챗봇 문의는 365일 24시간 운영</p>
-                    <img src="img/contact/penguin_consult.png" alt="상담하기">
-                </a>
-            </div>
-            <div class="contact">
-                <a href="">
-                    <h2>1:1 문의</h2>
-                    <img src="img/contact/star_contact.png" alt="1:1 문의">
-                </a>
-            </div>
+            <a href="" class="notice">
+                <h2>공지사항</h2>
+                <img src="img/contact/ico_notice.png" alt="notice_icon">
+                <img src="img/contact/Gomi_notice.png" alt="공지사항">
+            </a>
+            <a href="" class="consult">
+                <h2>상담하기</h2>
+                <p>※ 챗봇 문의는 365일 24시간 운영</p>
+                <img src="img/contact/penguin_consult.png" alt="상담하기">
+            </a>
+            <a href="" class="contact">
+                <h2>1:1 문의</h2>
+                <img src="img/contact/star_contact.png" alt="1:1 문의">
+            </a>
         </section>
 
         <section class="faq">
@@ -157,22 +154,56 @@
 
             <div class="contact-list">
                 <div class="contact-item">
-                    <h3 class="phone">고객센터(유료) 1758-5689</h3>
+                    <h3 class="info">고객센터(유료) 1758-5689</h3>
                     <p class="hours">운영시간 : 평일 오전 9:00 ~ 오후 6:00</p>
-                    <a href="#" class="contact-link">ARS 구성도
+                    <a href="#" class="contact-link">
+                        <span>ARS 상담하기</span>
                         <span>
                             <ion-icon name="chevron-forward-outline"></ion-icon>
                         </span>
                     </a>
                 </div>
                 <div class="contact-item">
-
+                    <h3 class="info">고객센터(무료) 카카오채널</h3>
+                    <p class="hours">운영시간 : 챗봇 연중무휴 운영중</p>
+                    <a href="#" class="contact-link">
+                        <span>챗봇 채팅 바로가기</span>
+                        <span>
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                        </span>
+                    </a>
                 </div>
                 <div class="contact-item">
-
+                    <h3 class="info">이메일 : Moonyz.gmail.com</h3>
+                    <p class="hours">운영시간 : 평일 오전 9:00 ~ 오후 6:00</p>
+                    <a href="#" class="contact-link">
+                        <span>메일 쓰기</span>
+                        <span>
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                        </span>
+                    </a>
                 </div>
             </div>
         </section>
+        <footer>
+            <div class="inner footer-inner">
+                <div class="footer-text">
+                    <img src="img/logo/footerLogo.png" alt="footer로고">
+                    <p class="footer-desc">
+                        무니즈 프렌즈는 청량한 파도 소리가 가득한 바닷속 마을, '파도동'의 이야기를 전합니다. 우리는 스토리텔링을 기반으로 한 캐릭터 IP를<br>
+                        오리지널 IP인 ‘무니즈 (MOONYZ)’를 통해 서로의 기쁨, 슬픔, 아름다운 마음을 파도동마을에서 다양한 모습으로 표현합니다. <br>
+                        파도에 실려 오는 무니즈 친구들의 청량한 위트와 따뜻한 마음을 통해 바쁜 일상 속에서도 작은 미소와 포근한 쉼이 찾아오기를 바랍니다. <br>
+                        (c) MOONYZ, INC.
+                    </p>
+                </div>
+                <div class="icon-area">
+                    <a href="#"><span></span></a>
+                    <a href="#"><span></span></a>
+                    <a href="#"><span></span></a>
+                    <a href="#"><span></span></a>
+                </div>
+            </div>
+        </footer>
     </div>
 
     <!-- ion icon -->

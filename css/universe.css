@@ -22,8 +22,8 @@ section {
 }
 
 .horizontal-scroll {
-    width: 100vw;
-    height: 100vh;
+    /* width: 100vw;
+    height: 100vh; */
     overflow-x: auto;
     overflow-y: hidden;
 }
@@ -31,7 +31,6 @@ section {
 .page-wrap {
     display: flex;
     width: max-content;
-    gap: 20px;
 }
 
 .uni-inner {
@@ -49,7 +48,6 @@ section {
 .pages {
     width: 1920px;
     min-width: 1920px;
-    height: 910px;
     flex: 0 0 1920px;
     background-color: #ECE2D7;
 }
@@ -76,7 +74,8 @@ section {
 .page-wrap .page-next {
     position: relative;
     width: 200px;
-    height: 180px;
+    height: 100vh;
+    background-color: #ECE2D7;
 }
 
 .page-wrap .page-next a img {
