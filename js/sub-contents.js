@@ -104,14 +104,24 @@ const contentslData = [
 /* 카드 클릭 */
 cardItems.forEach((card) => {
 
-    card.addEventListener("click", (event) => {
-        event.preventDefault();
+    card.addEventListener("click", (e) => {
+        e.preventDefault();
         const modalNumber = card.dataset.modal;
         const data = contentslData[modalNumber - 1];
 
+        //기존 이미지 숨기기
+        modalImg.style.opacity = "0";
+
+        //이미지와 텍스트 변경
         modalImg.src = data.img;
         modalText.textContent = data.text;
 
+        // 새 이미지가 로드되면 보여주기
+        modalImg.onload = () => {
+            modalImg.style.opacity = "1";
+        };
+
+        //모달 열기
         modal.classList.add("active");
 
         /* 모달 열릴 때 뒤쪽 스크롤 막기 */
@@ -124,7 +134,7 @@ cardItems.forEach((card) => {
 /* 어두운 배경 클릭 */
 modalBg.addEventListener("click", () => {
 
-    contentsModal.classList.remove("active");
+    modal.classList.remove("active");
 
     document.body.style.overflow = "";
 
