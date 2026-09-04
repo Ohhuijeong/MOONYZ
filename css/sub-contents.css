@@ -2,6 +2,21 @@
 @import url(fonts.css);
 @import url(reset.css);
 
+/* ===scrollbar=== */
+html,
+body {
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE, Edge */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari */
+}
+
 /* ===cursor=== */
 body {
     cursor: url(../img/cursor/cursor_normal.png)0 0, auto;
@@ -48,7 +63,7 @@ body {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 55px);
-    transition: .4s;
+    transition: 0.4s;
 }
 
 /* hover 하면 엽서만 위로 */
@@ -66,15 +81,20 @@ body {
     position: fixed;
     inset: 0;
 
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     z-index: 100;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
 }
 
 .contents-modal.active {
-    display: flex;
+    opacity: 1;
+    visibility: visible;
 }
 
 .modal-bg {
