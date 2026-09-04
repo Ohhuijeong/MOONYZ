@@ -11,16 +11,113 @@ i {
     visibility: hidden;
 }
 
-.top-contact {
-    background: url(../img/contact/contact_web.png) no-repeat center/cover;
-    height: 600px;
-    padding: 0;
-}
+/* 이벤트 & 프로그램 */
+        .event-program {
+            padding: 0;
+            height: 483px;
+            margin-top: 76px;
+        }
 
-.top-contact h2 {
-    text-align: center;
-    padding-top: 100px;
-    font-family: 'TMoneyDungunbaram';
-    font-size: 32px;
-    font-weight: 800;
-}
+        .event-program .title-area {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 35px;
+        }
+
+        .event-program .title-area .viewAll {
+            display: flex;
+            position: relative;
+        }
+
+        .event-program .title-area .viewAll span {
+            line-height: 1.5;
+            margin-left: 3px;
+        }
+
+        .event-program .title-area .viewAll ion-icon {
+            width: 16px;
+            height: 16px;
+            color: #717171;
+        }
+
+        /* 이벤트 영역 */
+        .event-area {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* 이벤트 슬라이드 */
+        .event-slide .swiper-slide {
+            background: #F7F7F7;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 129px;
+            width: 955px;
+            height: 407px;
+            transition: 0.3s;
+            overflow: hidden;
+        }
+
+        .event-slide .swiper-slide .text-area .badge {
+            width: 114px;
+            height: 36px;
+            border-radius: 36px;
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 36px;
+            text-align: center;
+            background-color: #FAF674;
+            margin-bottom: 17px;
+        }
+
+        .event-slide .swiper-slide .text-area .event-title {
+            font-family: 'TMoneyDungunbaram';
+            font-size: 38.4px;
+            font-weight: 800;
+            margin-bottom: 22px;
+            display: block;
+        }
+
+        .event-slide .swiper-slide .text-area .event-desc {
+            line-height: 1.6;
+            font-weight: 600;
+            font-size: 19.2px;
+        }
+
+        .swiper-slide .img-area img {
+            display: block;
+            width: 264.4px;
+            height: 302.4px;
+            object-fit: contain;
+        }
+
+        /* 버튼 영역 */
+        .event-area .button-area {
+            width: 470px;
+            height: 408px;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .event-area .button-area button {
+            width: 100%;
+            height: 124px;
+            border-radius: 24px;
+            background-color: #EBE7DD;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 124px;
+        }
+
+        .event-area .button-area button:nth-child(2) {
+            background-color: #EDF3B8;
+        }
+
+        .event-area .button-area button:nth-child(3) {
+            background-color: #FBD6BB;
+        }
