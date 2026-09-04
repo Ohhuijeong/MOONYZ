@@ -7,3 +7,4 @@ var projectSwiper = new Swiper('.projectSwiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
