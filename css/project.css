@@ -4,12 +4,17 @@ section {
     padding: 0;
 }
 
+video {
+    width: inherit;
+}
+
 .ico-shop {
     opacity: 0;
     visibility: hidden;
 }
 
 #projectBg {
+    width: 100%;
     height: 100vh;
     background: url(../img/project/project-background.png) no-repeat center/cover;
     position: relative;
@@ -19,7 +24,7 @@ section {
 #projectSlider .board-area {
     width: 880px;
     height: 485px;
-    padding: 55px 70px 105px;
+    padding: 55px 68px 105px 70px;
     background: url(../img/project/board.png) no-repeat center/contain;
     position: absolute;
     left: 50%;
@@ -33,8 +38,16 @@ section {
     height: 100%;
 }
 
+#projectSlider .projectSwiper {
+    height: 100%;
+}
+
+#projectSlider .swiper-wrapper {
+    height: 100%;
+}
+
 .swiper-slide.project-slide {
-    width: 790px;
+    width: 100%;
     height: 100%;
     position: relative;
 }
@@ -48,6 +61,12 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.project-slide:hover .slide-hover {
+    opacity: 1;
 }
 
 .project-slide .slide-hover .detail-btn {
@@ -78,4 +97,39 @@ section {
 
 #projectSlider .swiper-navigation-icon {
     opacity: 0;
+}
+
+/* detail-board */
+#detail-board-area {
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    z-index: 999;
+}
+
+#detail-board-area .detail-board-frame {
+    width: 910px;
+    height: 4000px;
+    padding: 100px 75px 100px;
+    background: url(../img/project/projectFrame.png) no-repeat center/contain;
+    position: absolute;
+}
+
+.detail-board-frame ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.detail-board-frame li {
+    width: 100%;
+    height: 520px;
+}
+
+.detail-board-frame ul li:first-child {
+    height: 414px;
+}
+
+.detail-board-frame li img {
+    object-fit: cover;
 }
