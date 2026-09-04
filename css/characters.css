@@ -31,7 +31,7 @@ section {
     height: 100vh;
     position: relative;
     z-index: 1;
-    background-image: url("../img/characters/charactersBG.png");
+    background-image: url("../img/characters/charactersBG2.png");
     background-repeat: no-repeat;
     background-position: bottom/cover;
     background-size: 3686px 950px;
@@ -169,7 +169,7 @@ section {
 }
 
 .character.waddle img {
-    animation: waddle 0.85s ease-in-out infinite;
+    animation: waddle 0.8s ease-out infinite;
     transform-origin: bottom center;
 }
 
