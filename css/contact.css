@@ -56,9 +56,6 @@ i {
 #search-btn {
     width: 40px;
     height: 40px;
-    border: none;
-    background: none;
-    cursor: pointer;
 }
 
 #search-btn img {
@@ -74,7 +71,7 @@ i {
     grid-template-columns: 1fr 1fr;
     row-gap: 27px;
     column-gap: 54px;
-    margin: 0 auto;
+    margin: 20px auto 0;
 }
 
 .contact-area>a {
@@ -200,7 +197,9 @@ i {
 .question-wrap .question-card p {
     margin-bottom: 15px;
     font-size: 16px;
+    font-weight: 500;
     word-break: keep-all;
+    color: #666666;
 }
 
 .question-wrap .answer {
