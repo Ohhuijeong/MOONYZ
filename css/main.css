@@ -27,13 +27,13 @@ body {
 /* 메인 GNB들 */
 #main-visual .main-characters {
     position: absolute;
-    top: 25.3%;
-    left: 30.8%;
+    top: 25.5%;
+    left: 29.3%;
     width: 330px;
 
     /* 👇 고래 머리(분수공) 위치. 이미지 보면서 조정 */
-    --spout-left: 66%;
-    --spout-top: 15%;
+    --spout-left: 67%;
+    --spout-top: 15.2%;
 }
 
 #main-visual .main-contact {
@@ -46,8 +46,8 @@ body {
 #main-visual .main-contents {
     width: 200px;
     position: absolute;
-    top: 70%;
-    right: 23.5%;
+    top: 68.5%;
+    right: 24.5%;
 }
 
 #main-visual .main-popup {
@@ -71,16 +71,16 @@ body {
 
 .main-characters .characters-hover {
     width: 115px;
-    top: -18%;
-    right: 18%;
+    top: -20%;
+    left: 20%;
     opacity: 0;
     transition: 0.3s
 }
 
 .main-contact .contact-hover {
     width: 93px;
-    top: -17%;
-    right: 5%;
+    top: -16%;
+    right: 7%;
     opacity: 0;
     transition: 0.3s
 }
@@ -103,7 +103,7 @@ body {
 
 .main-projects .projects-hover {
     width: 92px;
-    top: 0;
+    top: 10px;
     right: -12%;
     opacity: 0;
     transition: 0.3s
