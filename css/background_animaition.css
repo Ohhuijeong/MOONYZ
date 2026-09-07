@@ -17,8 +17,8 @@
 }
 
 .fish1 {
-    width: 150px;
-    height: 50px;
+    width: 100px;
+    height: 40px;
     top: 0;
     left: 300px;
     animation: fish1Move 20s infinite;
@@ -58,8 +58,8 @@
 }
 
 .fish2 {
-    width: 150px;
-    height: 47px;
+    width: 120px;
+    height: 38px;
     top: 170px;
     left: 56%;
     animation: fish2Move 30s infinite;
@@ -78,7 +78,7 @@
         transform: scale(1);
     }
 
-    25% {
+    27% {
         left: 40%;
         top: 20px;
         transform: scaleX(-1);
@@ -102,13 +102,13 @@
         transform: scaleX(1);
     }
 
-    75% {
+    77% {
         left: 40%;
         top: 150px;
         transform: scaleX(-1);
     }
 
-    99% {
+    97% {
         left: 56%;
         top: 170px;
         transform: scaleX(-1);
@@ -122,8 +122,8 @@
 }
 
 .fish3 {
-    width: 150px;
-    height: 58px;
+    width: 120px;
+    height: 46px;
     top: 0;
     right: 150px;
     animation: fish3Move 20s infinite, bob 3.4s ease-in-out infinite;
