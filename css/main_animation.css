@@ -1,3 +1,7 @@
+/* =======================================================
+                    세계관 & 캐릭터
+=========================================================*/
+
 /* ================= 물줄기(spout) SVG ================= */
 .whale-spout {
     position: absolute;
@@ -11,35 +15,36 @@
     overflow: visible;
 }
 
-/* 물줄기 가닥: 밑동부터 함께 뻗어나가며 위로 갈수록 벌어짐 */
+/* 물줄기 가닥: 화이트 계열 유지 + 그림자만 한 단계 더 또렷하게 */
 .stream-line {
     fill: none;
     stroke-linecap: round;
     stroke-dasharray: 100;
     stroke-dashoffset: 100;
     opacity: 0;
+    filter: drop-shadow(0 0 1.5px rgba(60, 140, 165, 0.6)) drop-shadow(0 0 4px rgba(200, 240, 250, 0.45));
 }
 
 .stream-line.s0 {
-    stroke: rgba(220, 238, 255, 0.95);
+    stroke: rgba(255, 255, 255, 0.98);
     stroke-width: 5;
 }
 
 .stream-line.s1,
 .stream-line.sm1 {
-    stroke: rgba(220, 238, 255, 0.9);
+    stroke: rgba(245, 253, 255, 0.95);
     stroke-width: 3.6;
 }
 
 .stream-line.s2,
 .stream-line.sm2 {
-    stroke: rgba(220, 238, 255, 0.85);
+    stroke: rgba(235, 250, 255, 0.9);
     stroke-width: 3;
 }
 
 .stream-line.s3,
 .stream-line.sm3 {
-    stroke: rgba(220, 238, 255, 0.8);
+    stroke: rgba(225, 247, 255, 0.85);
     stroke-width: 2.4;
 }
 
@@ -78,11 +83,11 @@
 
     55% {
         stroke-dashoffset: 0;
-        opacity: 0.9;
+        opacity: 1;
     }
 
     82% {
-        opacity: 0.3;
+        opacity: 0.35;
     }
 
     100% {
@@ -91,11 +96,13 @@
     }
 }
 
+/* 물방울: 화이트 계열, 미스트처럼 퍼지며 사라짐 */
 .droplet {
-    fill: rgba(220, 238, 255, 0.95);
+    fill: rgba(255, 255, 255, 0.98);
     opacity: 0;
     transform-box: fill-box;
     transform-origin: center;
+    filter: drop-shadow(0 0 1px rgba(60, 140, 165, 0.55)) drop-shadow(0 0 3px rgba(200, 240, 250, 0.4));
 }
 
 .main-characters:hover .droplet {
@@ -117,7 +124,7 @@
     }
 
     40% {
-        opacity: 0.9;
+        opacity: 0.95;
         transform: translate(calc(var(--dx) * 0.4), -2px) scale(1.15);
     }
 
@@ -160,4 +167,133 @@
 .droplet.dm3 {
     animation-delay: 0.61s;
     --dx: -13px;
+}
+
+
+/* =======================================================
+                        고객센터
+=========================================================*/
+/* a 태그를 기준점(position 컨텍스트)으로 만듦 - 불빛 레이어들이 여길 기준으로 배치됨 */
+.beacon-link {
+    position: relative;
+    display: block;
+}
+
+/* ---- 이하 기존과 동일한 불빛 이펙트 코드 ---- */
+.light-mask {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    overflow: hidden;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    clip-path: ellipse(44% 3% at 49.8% 23%);
+}
+
+.beacon-link:hover .light-mask {
+    opacity: 1;
+}
+
+.beacon-pivot {
+    position: absolute;
+    top: 23%;
+    left: 49.8%;
+    width: 0;
+    height: 0;
+}
+
+.beam-group {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+}
+
+.beacon-link:hover .beam-group {
+    animation: spin 2.5s linear infinite, glowPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes glowPulse {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: .4;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: .4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.beam {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 125px;
+    height: 25px;
+    transform-origin: 0% 50%;
+    transform: translateY(-50%);
+    clip-path: polygon(0% 38%, 0% 62%, 100% 100%, 100% 0%);
+    background: linear-gradient(to right,
+            rgba(255, 249, 168, 1) 0%, rgba(255, 238, 88, .7) 30%,
+            rgba(255, 238, 88, .25) 65%, rgba(255, 238, 88, 0) 100%);
+    mix-blend-mode: screen;
+}
+
+.beam--opposite {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.beacon-core {
+    position: absolute;
+    top: 23%;
+    left: 49.8%;
+    width: 7px;
+    height: 7px;
+    margin-left: -3.5px;
+    margin-top: -3.5px;
+    border-radius: 50%;
+    background: #fffbd6;
+    box-shadow: 0 0 4px 2px rgba(255, 238, 88, .95), 0 0 9px 4.5px rgba(255, 238, 88, .5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 11;
+    pointer-events: none;
+}
+
+.beacon-link:hover .beacon-core {
+    opacity: 1;
+    animation: pulseCore 1s ease-in-out infinite alternate;
+}
+
+@keyframes pulseCore {
+    from {
+        box-shadow: 0 0 4px 2px rgba(255, 238, 88, .9), 0 0 8px 4px rgba(255, 238, 88, .4);
+    }
+
+    to {
+        box-shadow: 0 0 6px 3px rgba(255, 238, 88, 1), 0 0 12px 6px rgba(255, 238, 88, .6);
+    }
 }
