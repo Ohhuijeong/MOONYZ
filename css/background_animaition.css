@@ -78,7 +78,7 @@
         transform: scale(1);
     }
 
-    27% {
+    25% {
         left: 40%;
         top: 20px;
         transform: scaleX(-1);
@@ -102,13 +102,13 @@
         transform: scaleX(1);
     }
 
-    77% {
+    75% {
         left: 40%;
         top: 150px;
         transform: scaleX(-1);
     }
 
-    97% {
+    99% {
         left: 56%;
         top: 170px;
         transform: scaleX(-1);
