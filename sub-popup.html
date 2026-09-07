@@ -4,17 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>무니즈 고객센터</title>
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/popup.css">
+    <title>무니즈 팝업</title>
+   
     <script src="js/jquery-4.0.0.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/common.js" defer></script>
-    <script src="js/popup.js"></script>
+    <script src="js/popup.js" defer></script>
 
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
     
+ <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/popup.css">
 </head>
 
 <body>
@@ -74,11 +75,161 @@
             </nav>
         </header>
 
+        <main class="popup-page">
+            <!-- category -->
+            <div class="popup-category">
+                <button type="button" class="category-btn sub-title active" data-filter="all">전체</button>
+                <button type="button" class="category-btn sub-title" data-filter="current">팝업중</button>
+                <button type="button" class="category-btn sub-title" data-filter="past">지난 팝업</button>
+            </div>
+
+
+            <!-- popup swiper -->
+            <section class="popup-slide-section">
+                <div class="swiper swiper-area">
+                    <div class="swiper-wrapper">
+                        <!-- 지난 팝업 영역 1 -->
+                        <div class="swiper-slide popup-slide" data-category="past">
+                            <a href="#" class="popup-card">
+                                <img src="img/popup/popup_spring.png" alt="파도동 봄">
+                                <div class="popup-card-text">
+                                    <p class="sub-title">
+                                        따뜻한 봄날, 파도동 친구들과 함께한 특별한 팝업입니다.
+                                    </p>
+                                    <span class="popup-info-but">자세히 보기</span>
+                                </div>
+                                <span class="popup-past">
+                                    지난 팝업
+                                </span>
+                            </a>
+                        </div>
+
+                        <!-- 지난 팝업 영역 2 -->
+                        <div class="swiper-slide popup-slide" data-category="past">
+                            <a href="#" class="popup-card">
+                                <img src="img/popup/popup_olive.png" alt="파도동 올리브영">
+                                <div class="popup-card-text">
+                                    <p class="sub-title">
+                                        무니즈와 올리브영이 함께한 힐링 마켓을 만나보세요.
+                                    </p>
+                                    <span class="popup-info-but">자세히 보기</span>
+                                </div>
+                                <span class="popup-past">
+                                    지난 팝업
+                                </span>
+                            </a>
+                        </div>
+
+                        <!-- 현재 팝업 영역 3 -->
+                        <div class="swiper-slide popup-slide" data-category="current">
+                            <a href="#" class="popup-card">
+                                <img src="img/popup/popup_summer.png" alt="파도동 여름우체국">
+                                <div class="popup-card-text">
+                                    <p class="sub-title">
+                                        파도가 전해준 마음을 편지에 담아 보내는 여름 우체국입니다.
+                                    </p>
+                                    <span class="popup-info-but">자세히 보기</span>
+                                </div>
+                                <span class="popup-current">
+                                    지난 팝업
+                                </span>
+                            </a>
+                        </div>
+
+                        <!-- 지난 팝업 영역 4 -->
+                        <div class="swiper-slide popup-slide" data-category="past">
+                            <a href="#" class="popup-card">
+                                <img src="img/popup/popup_BR.png" alt="파도동 배스킨라빈스">
+                                <div class="popup-card-text">
+                                    <p class="sub-title">
+                                        파도처럼 밀려오는 무니의 특별한 맛을 느껴보세요! 
+                                    </p>
+                                    <span class="popup-info-but">자세히 보기</span>
+                                </div>
+                                <span class="popup-past">
+                                    지난 팝업
+                                </span>
+                            </a>
+                        </div>
+
+                        <!-- 지난 팝업 영역 5 -->
+                        <div class="swiper-slide popup-slide" data-category="past">
+                            <a href="#" class="popup-card">
+                                <img src="img/popup/popup_lab.png" alt="파도동 해저연구소">
+                                <div class="popup-card-text">
+                                    <p class="sub-title">
+                                        파도동의 해저 연구소로 초대합니다.
+                                    </p>
+                                    <span class="popup-info-but">자세히 보기</span>
+                                </div>
+                                <span class="popup-past">
+                                    지난 팝업
+                                </span>
+                            </a>
+                        </div>
+
+                        <!-- 지난 팝업 영역 6 -->
+                        <div class="swiper-slide popup-slide" data-category="past">
+                            <a href="#" class="popup-card">
+                                <img src="img/popup/popup_baseball.png" alt="파도동 야구">
+                                <div class="popup-card-text">
+                                    <p class="sub-title">
+                                        파도동 친구와 구단이 만났다!
+                                    </p>
+                                    <span class="popup-info-but">자세히 보기</span>
+                                </div>
+                                <span class="popup-past">
+                                    지난 팝업
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 클릭 시 팝업중 상세영역 -->
+            <section class="current-popup-list inner">
+
+                <article class="current-popup-item">
+
+                    <!-- 왼쪽 이미지 -->
+                    <div class="current-popup-img">
+                        <img src="img/popup/popup_summer.png" alt="파도동 여름 우체국">
+                    </div>
+
+                    <!-- 오른쪽 정보 -->
+                    <div class="current-popup-info">
+
+                        <h2>무니즈 - 파티파도동 여름 우체국</h2>
+
+                        <dl>
+                            <div>
+                                <dt>기간</dt>
+                                <dd>26.07.03(금) - 09.28(월)</dd>
+                            </div>
+
+                            <div>
+                                <dt>장소</dt>
+                                <dd>서울 용산구 한강대로23길 55<br>용산아이파크몰 6층</dd>
+                            </div>
+
+                            <div>
+                                <dt>운영시간</dt>
+                                <dd>일-목 10:00 ~ 20:00 <br> 금/토 10:00 ~ 21:00</dd>
+                            </div>
+                        </dl>
+
+                    </div>
+
+                </article>
+
+            </section>
+        </main>
         <section class="event-program inner">
             <div class="title-area">
                 <h2 class="title">이벤트 & 프로그램</h2>
                 <a href="" class="viewAll">
-                    <p>전체보기</p>
+                    <p class="sub-title">전체보기</p>
                     <span><ion-icon name="chevron-forward-outline"></ion-icon></span>
                 </a>
             </div>
@@ -98,7 +249,7 @@
                                     </p>
                                 </div>
                                 <div class="img-area">
-                                    <img src="" alt="">
+                                    <img src="img/popup/event&program01.png" alt="">
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -112,7 +263,7 @@
                                     </p>
                                 </div>
                                 <div class="img-area">
-                                    <img src="" alt="">
+                                    <img src="img/popup/event&program02.png" alt="">
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -126,7 +277,7 @@
                                     </p>
                                 </div>
                                 <div class="img-area">
-                                    <img src="" alt="">
+                                    <img src="img/popup/event&program03.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -142,6 +293,7 @@
                 </div>
             </div>
         </section>
+
 
 
         <footer>
@@ -164,11 +316,8 @@
             </div>
         </footer>
     </div>
-
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
-
-    
 
     <!-- ion icon -->
     <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
