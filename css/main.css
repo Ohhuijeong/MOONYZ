@@ -27,8 +27,8 @@ body {
 /* 메인 GNB들 */
 #main-visual .main-characters {
     position: absolute;
-    top: 25.3%;
-    left: 30.8%;
+    top: 25.5%;
+    left: 29.3%;
     width: 330px;
 
     /* 👇 고래 머리(분수공) 위치. 이미지 보면서 조정 */
@@ -46,8 +46,8 @@ body {
 #main-visual .main-contents {
     width: 200px;
     position: absolute;
-    top: 70%;
-    right: 23.5%;
+    top: 68.5%;
+    right: 24.5%;
 }
 
 #main-visual .main-popup {
