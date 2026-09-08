@@ -1,25 +1,16 @@
-/* =========================
-   popup swiper
-========================= */
+/* === popup swiper === */
 
 const popupSwiper = new Swiper(".swiper-area", {
-
     slidesPerView: "auto",
-
     centeredSlides: true,
-
-    spaceBetween: 30,
-
+    spaceBetween: 24,
+    initialSlide: 2,
     loop: false,
-
     grabCursor: true,
-
 });
 
 
-/* =========================
-   popup category
-========================= */
+/* === popup category === */
 
 const categoryBtns =
     document.querySelectorAll(".category-btn");
@@ -34,14 +25,30 @@ const currentPopupList =
     document.querySelector(".current-popup-list");
 
 
+/* === 처음 화면 지그재그 === */
+
+let count = 0;
+
+popupSlides.forEach((slide) => {
+
+    if (count % 2 === 0) {
+        slide.classList.add("down");
+    } else {
+        slide.classList.add("up");
+    }
+
+    count++;
+
+});
+
+
+/* === category click === */
+
 categoryBtns.forEach((btn) => {
 
     btn.addEventListener("click", () => {
 
-        /* -------------------------
-           active 버튼 초기화
-        ------------------------- */
-
+        /* active 버튼 초기화 */
         categoryBtns.forEach((button) => {
             button.classList.remove("active");
         });
@@ -53,38 +60,30 @@ categoryBtns.forEach((btn) => {
         const filter = btn.dataset.filter;
 
 
-        /* =========================
-           팝업중
-        ========================= */
+        /* === 팝업중 === */
 
         if (filter === "current") {
 
-            // 기존 swiper 숨기기
             popupSlideSection.style.display = "none";
 
-            // 현재 팝업 상세 보여주기
             currentPopupList.classList.add("active");
 
             return;
         }
 
 
-        /* =========================
-           전체 / 지난 팝업
-        ========================= */
+        /* === 전체 / 지난 팝업 === */
 
-        // 상세 영역 숨기기
         currentPopupList.classList.remove("active");
 
-        // swiper 다시 보여주기
         popupSlideSection.style.display = "block";
 
 
-        /* 슬라이드 필터 */
+        /* === 슬라이드 필터 === */
+
         popupSlides.forEach((slide) => {
 
-            const category =
-                slide.dataset.category;
+            const category = slide.dataset.category;
 
 
             /* 전체 */
@@ -93,6 +92,7 @@ categoryBtns.forEach((btn) => {
                 slide.classList.remove("is-hidden");
 
             }
+
 
             /* 지난 팝업 */
             else if (filter === "past") {
@@ -112,19 +112,67 @@ categoryBtns.forEach((btn) => {
         });
 
 
-        /* Swiper가 display 변경을 다시 계산 */
+        /* === 지그재그 다시 설정 === */
+
+        let count = 0;
+
+        popupSlides.forEach((slide) => {
+
+            slide.classList.remove("down", "up");
+
+            if (!slide.classList.contains("is-hidden")) {
+
+                if (count % 2 === 0) {
+
+                    slide.classList.add("down");
+
+                } else {
+
+                    slide.classList.add("up");
+
+                }
+
+                count++;
+
+            }
+
+        });
+
+
+        /* Swiper 다시 계산 */
+
         popupSwiper.update();
 
-        popupSwiper.slideTo(0);
+
+        /* === 슬라이드 위치 === */
+
+        if (filter === "all") {
+
+            popupSlideSection.classList.remove("past-mode");
+
+            popupSwiper.params.centeredSlides = true;
+            popupSwiper.update();
+
+            popupSwiper.slideTo(2);
+
+        }
+        else if (filter === "past") {
+
+            popupSlideSection.classList.add("past-mode");
+
+            popupSwiper.params.centeredSlides = false;
+            popupSwiper.update();
+
+            popupSwiper.slideTo(0);
+
+        }
 
     });
 
 });
 
 
-/* =========================
-   event swiper
-========================= */
+/* === event swiper === */
 
 const eventSwiper = new Swiper(".event-swiper", {
 
