@@ -68,62 +68,45 @@
 
 @keyframes fish2Move {
     0% {
-        left: 56%;
-        transform: scale(1);
+        transform: translate(0, 0) scale(1);
     }
 
     24% {
-        left: 40%;
-        top: 20px;
-        transform: scale(1);
+        transform: translate(-350px, -100px) scale(1);
     }
 
     25% {
-        left: 40%;
-        top: 20px;
-        transform: scaleX(-1);
+        transform: translate(-350px, -100px) scaleX(-1);
     }
 
     49% {
-        left: 60%;
-        top: 80px;
-        transform: scaleX(-1);
+        transform: translate(150px, -30px) scaleX(-1);
     }
 
     50% {
-        left: 60%;
-        top: 80px;
-        transform: scaleX(1);
+        transform: translate(150px, -30px) scaleX(1);
     }
 
     74% {
-        left: 40%;
-        top: 150px;
-        transform: scaleX(1);
+        transform: translate(-350px, -100px) scaleX(1);
     }
 
     75% {
-        left: 40%;
-        top: 150px;
-        transform: scaleX(-1);
+        transform: translate(-350px, -100px) scaleX(-1);
     }
 
     99% {
-        left: 56%;
-        top: 170px;
-        transform: scaleX(-1);
+        transform: translate(0, 0) scaleX(-1);
     }
 
     100% {
-        left: 56%;
-        top: 170px;
-        transform: scaleX(1);
+        transform: translate(0, 0) scaleX(1);
     }
 }
 
 .fish3 {
     width: 120px;
-    height: 46px;
+    height: 46gitpx;
     top: 0;
     right: 150px;
     animation: fish3Move 20s infinite, bob 3.4s ease-in-out infinite;
@@ -131,27 +114,27 @@
 
 @keyframes fish3Move {
     0% {
-        transform: translateX(0) rotate(0deg) scaleX(1);
+        transform: translateX(0) scaleX(1);
     }
 
     22% {
-        transform: translateX(-80px) rotate(1.5deg) scaleX(1);
+        transform: translateX(-80px) scaleX(1);
     }
 
     47% {
-        transform: translateX(-150px) rotate(-1deg) scaleX(1);
+        transform: translateX(-150px) scaleX(1);
     }
 
     50% {
-        transform: translateX(-154px) rotate(-1deg) scaleX(-1);
+        transform: translateX(-154px) scaleX(-1);
     }
 
     72% {
-        transform: translateX(-82px) rotate(1deg) scaleX(-1);
+        transform: translateX(-82px) scaleX(-1);
     }
 
     100% {
-        transform: translateX(0) rotate(0deg) scaleX(-1);
+        transform: translateX(0) scaleX(-1);
     }
 }
 
