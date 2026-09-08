@@ -401,7 +401,9 @@ body {
 
 /* 현재 활성화된 점 */
 .event-swiper .swiper-pagination-bullet-active {
-    background: #333;
+    border-radius: 10px;
+    width: 14px;
+    background: #aaa;
 }
 
 /* 이벤트 텍스트 */
@@ -484,7 +486,7 @@ body {
 }
 
 .button-area button:nth-child(1):hover {
-    background-color: #EBE7DD;
+    background-color: #FFF3C4;
 }
 
 .button-area button:nth-child(2):hover {
