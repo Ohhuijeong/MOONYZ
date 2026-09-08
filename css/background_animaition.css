@@ -106,7 +106,7 @@
 
 .fish3 {
     width: 120px;
-    height: 46gitpx;
+    height: 46px;
     top: 0;
     right: 150px;
     animation: fish3Move 20s infinite, bob 3.4s ease-in-out infinite;
