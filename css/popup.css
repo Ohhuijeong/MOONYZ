@@ -1,22 +1,30 @@
 @charset "utf-8";
 
-/* =========================
-   popup page
-========================= */
-.popup-page {
-    padding-top: 48px;
+/* ===scrollbar=== */
+html,
+body {
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE, Edge */
 }
 
-/* =========================
-   category
-========================= */
+.ico-shop {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* ===popup page=== */
+.popup-page {
+    padding-top: 30px;
+}
+
+/* ===category=== */
 .popup-category {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 25px;
-
-    margin-bottom: 10px;
 }
 
 .category-btn {
@@ -43,14 +51,16 @@
 }
 
 
-/* =========================
-   popup swiper
-========================= */
+/* ===popup swiper=== */
 
 .popup-slide-section {
     width: 100%;
-    padding: 30px 0;
+    padding: 50px 0;
     overflow: visible;
+}
+
+.popup-slide-section.past-mode {
+    padding-left: 240px;
 }
 
 .swiper-area {
@@ -71,8 +81,12 @@
     transition: 0.4s;
 }
 
-.swiper-area .popup-slide:hover {
-    transform: translateY(-10px);
+.popup-slide.down .popup-card {
+    transform: translateY(20px);
+}
+
+.popup-slide.up .popup-card {
+    transform: translateY(-20px);
 }
 
 /* 팝업 카드 */
@@ -80,7 +94,7 @@
     position: relative;
 
     width: 100%;
-    height: 580px;
+    height: 560px;
 
     border-radius: 20px;
 
@@ -99,25 +113,52 @@
     transition: 0.4s;
 }
 
-.popup-card-text{
+.popup-card .popup-past {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    background: #f3f3f3;
+    padding: 8px 14px;
+    border-radius: 30px;
+}
+
+.popup-card .popup-current {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    background: #fff36a;
+    padding: 8px 14px;
+    border-radius: 30px;
+}
+
+/* 설명 영역 - 기본은 숨김 */
+.popup-card-text {
     position: absolute;
     inset: 0;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0);
+    flex-direction: column;
+
+    background: rgba(0, 0, 0, 0.6);
+
     opacity: 0;
-    transition: .4s;
+    transition: 0.4s;
     z-index: 2;
 }
+
 .popup-card-text .sub-title {
+    width: 75%;
     text-align: center;
     padding: 30px;
+    margin-bottom: 20px;
+
+    font-weight: 400;
+    word-break: keep-all;
     color: #fff;
-    transform: translateY(20px);
-    transition: .4s;
 }
-/* 팝업 정보 버튼 */
+
 .popup-info-btn {
     padding: 8px 18px;
 
@@ -126,8 +167,21 @@
 
     color: #fff;
     font-size: 14px;
+
+    transition: 0.3s;
 }
 
+.popup-info-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: #111;
+    font-weight: 600;
+}
+
+/* 카드 hover → 설명 보이기 */
+.popup-card:hover .popup-card-text {
+    opacity: 1;
+    visibility: visible;
+}
 
 /* 팝업 상태 */
 .popup-card-bottom span {
@@ -139,10 +193,14 @@
 }
 
 .popup-past {
+    font-size: 16px;
+    font-weight: 500;
     background: #eee;
 }
 
 .popup-current {
+    font-size: 16px;
+    font-weight: 500;
     background: #fff36a;
 }
 
@@ -154,9 +212,7 @@
 }
 
 
-/* ==========================
-   클릭 시 보이는 팝업중 영역
-========================== */
+/* ===클릭 시 보이는 팝업중 영역=== */
 
 /* 처음에는 숨김 */
 .current-popup-list {
@@ -164,7 +220,7 @@
 
     width: 100%;
 
-    padding: 20px 0;
+    padding: 40px 0;
 }
 
 
@@ -251,10 +307,20 @@
     margin: 0;
 }
 
+.info-btn {
+    margin-top: 80px;
+    padding: 12px 14px;
 
-/* =========================
-   event & program
-========================= */
+    font-size: 16px;
+    font-weight: 600;
+
+    border-radius: 10px;
+
+    background: #fff;
+    color: #222;
+}
+
+/* ===event & program=== */
 
 .event-program {
     padding-top: 48px;
@@ -299,10 +365,6 @@
     overflow: hidden;
 }
 
-.event-swiper {
-    width: 100%;
-}
-
 .event-swiper .swiper-slide {
     min-height: 450px;
 
@@ -314,13 +376,37 @@
 
     border-radius: 30px;
 
+    transition: 0.3s;
     background: #f7f7f7;
 }
 
+.event-swiper .swiper-button-next img,
+.event-swiper .swiper-button-prev img {
+    font-size: 0;
+    color: transparent;
+
+    width: 80px;
+    height: 80px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+/* 기본 점 */
+.event-swiper .swiper-pagination-bullet {
+    background: #ccc;
+    opacity: 1;
+}
+
+/* 현재 활성화된 점 */
+.event-swiper .swiper-pagination-bullet-active {
+    background: #333;
+}
 
 /* 이벤트 텍스트 */
 .text-area {
-    width: 30%;
+    width: 40%;
     font-size: 18;
     font-weight: 600;
 }
@@ -335,7 +421,7 @@
 
     background: #fff36a;
 
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .event-title {
@@ -355,8 +441,8 @@
 
 /* 이벤트 이미지 */
 .img-area {
-    width: 42%;
-    height: 350px;
+    width: 264px;
+    height: 300px;
 
     border-radius: 20px;
 
@@ -380,7 +466,7 @@
 
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 18px;
 }
 
 .button-area button {
@@ -389,7 +475,7 @@
     border: none;
     border-radius: 20px;
 
-    background: #f3f3f3;
+    background: #f7f7f7;
 
     font-size: 20px;
     font-weight: 600;
@@ -397,8 +483,19 @@
     transition: .3s;
 }
 
+.button-area button:nth-child(1):hover {
+    background-color: #EBE7DD;
+}
+
+.button-area button:nth-child(2):hover {
+    background-color: #EDF3B8;
+}
+
+.event-area .button-area button:nth-child(3):hover {
+    background-color: #FBD6BB;
+}
+
 .button-area button:hover {
     transform: translateY(-5px);
-
-    background: #e8f1fb;
 }
+
