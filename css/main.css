@@ -57,11 +57,30 @@ body {
     right: 32.5%;
 }
 
+#main-visual .crab {
+    position: absolute;
+    top: 55%;
+    right: 38%;
+    width: 100px;
+    height: auto;
+    z-index: 76;
+    will-change: transform;
+}
+
 #main-visual .main-projects {
     width: 200px;
     position: absolute;
     top: 66%;
     left: 3%;
+}
+
+.padodong img {
+    width: 124px;
+    height: auto;
+    position: absolute;
+    top: 55%;
+    right: 30%;
+    z-index: 77;
 }
 
 /* 메인 GNB hover시 나타나는 말풍선 */
