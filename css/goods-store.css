@@ -36,6 +36,17 @@ header .header-top {
     transform: translateY(-50%);
 }
 
+.ico-area .shopping-bag,
+.ico-area .my-page {
+    transform: translateY(0);
+    transition: 0.3s;
+}
+
+.ico-area .shopping-bag:hover,
+.ico-area .my-page:hover {
+    transform: translateY(-5px);
+}
+
 /* header-bottom */
 .header-bottom {
     height: 80px;
