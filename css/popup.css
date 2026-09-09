@@ -59,7 +59,7 @@ body {
     overflow: visible;
 }
 
-.swiper-area {
+section .swiper-area {
     width: 100%;
     overflow: visible;
 }
@@ -112,22 +112,24 @@ body {
 
 }
 
-.popup-card .popup-past {
+.popup-past,
+.popup-current {
     position: absolute;
     top: 25px;
     left: 25px;
-    background: #f3f3f3;
     padding: 8px 14px;
     border-radius: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    z-index: 1;
 }
 
-.popup-card .popup-current {
-    position: absolute;
-    top: 25px;
-    left: 25px;
+.popup-past {
+    background: #f3f3f3;
+}
+
+.popup-current {
     background: #fff36a;
-    padding: 8px 14px;
-    border-radius: 30px;
 }
 
 /* 설명 영역 - 기본은 숨김 */
@@ -190,22 +192,6 @@ body {
 
     font-size: 14px;
 }
-
-.popup-past {
-    font-size: 16px;
-    font-weight: 500;
-    background: #eee;
-    z-index: 1;
-}
-
-.popup-current {
-    font-size: 16px;
-    font-weight: 500;
-    background: #fff36a;
-    z-index: 1;
-}
-
-
 
 /* JS 필터용 */
 .popup-slide.is-hidden {
