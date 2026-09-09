@@ -109,7 +109,7 @@
     height: 46px;
     top: 0;
     right: 150px;
-    animation: fish3Move 20s infinite, bob 3.4s ease-in-out infinite;
+    animation: fish3Move 20s infinite;
 }
 
 @keyframes fish3Move {
@@ -118,7 +118,7 @@
     }
 
     22% {
-        transform: translateX(-80px) scaleX(1);
+        transform: translate(-80px, 50px) scaleX(1);
     }
 
     47% {
@@ -126,27 +126,15 @@
     }
 
     50% {
-        transform: translateX(-154px) scaleX(-1);
+        transform: translateX(-150px) scaleX(-1);
     }
 
     72% {
-        transform: translateX(-82px) scaleX(-1);
+        transform: translateX(-82px, -60px) scaleX(-1);
     }
 
     100% {
         transform: translateX(0) scaleX(-1);
-    }
-}
-
-@keyframes bob {
-
-    0%,
-    100% {
-        margin-top: 0px;
-    }
-
-    50% {
-        margin-top: 8px;
     }
 }
 
