@@ -36,6 +36,11 @@ body {
     width: 103px;
 }
 
+.ico-shop {
+    opacity: 0;
+    visibility: hidden;
+}
+
 /* ===contents=== */
 .contents-card {
     position: absolute;
