@@ -59,10 +59,6 @@ body {
     overflow: visible;
 }
 
-.popup-slide-section.past-mode {
-    padding-left: 240px;
-}
-
 .swiper-area {
     width: 100%;
     overflow: visible;
@@ -79,6 +75,10 @@ body {
     width: 400px;
     flex-shrink: 0;
     transition: 0.4s;
+}
+
+.swiper-area .popup-slide:hover {
+    transform: translateY(-5px);
 }
 
 .popup-slide.down .popup-card {
@@ -110,7 +110,6 @@ body {
     object-fit: cover;
     object-position: center;
 
-    transition: 0.4s;
 }
 
 .popup-card .popup-past {
@@ -178,7 +177,6 @@ body {
     font-weight: 600;
 }
 
-/* 카드 hover → 설명 보이기 */
 .popup-card:hover .popup-card-text {
     opacity: 1;
     visibility: visible;
@@ -197,12 +195,14 @@ body {
     font-size: 16px;
     font-weight: 500;
     background: #eee;
+    z-index: 1;
 }
 
 .popup-current {
     font-size: 16px;
     font-weight: 500;
     background: #fff36a;
+    z-index: 1;
 }
 
 
@@ -218,9 +218,7 @@ body {
 /* 처음에는 숨김 */
 .current-popup-list {
     display: none;
-
     width: 100%;
-
     padding: 40px 0;
 }
 
@@ -250,8 +248,6 @@ body {
     width: 820px;
     height: 580px;
     object-fit: contain;
-
-    background: #f3f3f3;
 }
 
 .current-popup-img img {
@@ -486,19 +482,22 @@ body {
     transition: .3s;
 }
 
-.button-area button:nth-child(1):hover {
-    background-color: #FFF3C4;
+.button-area button:nth-child(1) {
+    background: #FFF3C4;
 }
 
-.button-area button:nth-child(2):hover {
-    background-color: #EDF3B8;
+.button-area button:nth-child(2) {
+    background: #EDF3B8;
 }
 
-.event-area .button-area button:nth-child(3):hover {
-    background-color: #FBD6BB;
+.button-area button:nth-child(3) {
+    background: #FBD6BB;
 }
 
 .button-area button:hover {
     transform: translateY(-5px);
 }
 
+footer {
+    background-color: #EBE0D0;
+}
