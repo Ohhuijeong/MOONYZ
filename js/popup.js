@@ -2,13 +2,16 @@
 
 const popupSwiper = new Swiper(".swiper-area", {
     slidesPerView: "auto",
-    centeredSlides: true,
+    centeredSlides: false,
     spaceBetween: 24,
 
-    initialSlide: 2,
+    initialSlide: 1,
 
     loop: false,
     grabCursor: true,
+
+    slidesOffsetBefore: 240,
+    slidesOffsetAfter: 240,
 });
 
 
