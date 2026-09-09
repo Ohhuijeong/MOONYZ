@@ -2,13 +2,20 @@
 
 const popupSwiper = new Swiper(".swiper-area", {
     slidesPerView: "auto",
-    centeredSlides: true,
+    centeredSlides: false,
     spaceBetween: 24,
-    initialSlide: 2,
     loop: false,
     grabCursor: true,
+
+    slidesOffsetBefore: 240,
+    slidesOffsetAfter: 240,
+
+    initialSlide: 1
 });
 
+popupSwiper.setTranslate(
+    popupSwiper.getTranslate() + 100
+);
 
 /* === popup category === */
 
