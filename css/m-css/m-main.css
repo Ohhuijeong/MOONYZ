@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/* 메인화면 */
+#main-visual {
+    background: url(../../img/main/m_mainBG.png) no-repeat center/cover;
+    position: relative;
+}
+
+/* header */
+#header #gnbBtn {
+    height: 28px;
+    width: 28px
+}
+
+/* 메인 GNB들 */
+#main-visual>.main-gnb>a>* {
+    display: none;
+}
+
+#main-visual>.main-gnb>a {
+    position: absolute;
+}
+
+#main-visual .m_main-characters {
+    width: 177px;
+    height: 125px;
+    background: url(../../img/main/m_main_characters.png) no-repeat center/contain;
+    top: -47px;
+    right: 112px;
+}
+
+#main-visual .m_main-contact {
+    width: 105px;
+    height: 147px;
+    background: url(../../img/main/m_main_contact.png) no-repeat center/contain;
+    top: -80px;
+    right: 136px;
+}
+
+#main-visual .m_main-popup {
+    width: 94px;
+    height: 137px;
+    background: url(../../img/main/m_main_popup.png) no-repeat center/contain;
+    top: 170px;
+    right: -90px;
+}
+
+#main-visual .m_main-contents {
+    width: 105px;
+    height: 133px;
+    background: url(../../img/main/m_main_contents.png) no-repeat center/contain;
+    top: -130px;
+    right: 150px;
+}
+
+#main-visual .m_main-projects {
+    width: 127px;
+    height: 136px;
+    background: url(../../img/main/m_main_projects.png) no-repeat center/contain;
+    top: 77px;
+    right: -145px;
+}
+
+#main-visual .crab {
+    display: none;
+}
+
+.padodong img {
+    display: none;
+}
