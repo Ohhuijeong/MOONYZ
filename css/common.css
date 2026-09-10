@@ -224,6 +224,11 @@ footer .footer-desc {
     font-family: 'Suit';
     color: #4d5252;
     position: relative;
+    word-break: keep-all;
+}
+
+footer .m-footer-desc {
+    display: none;
 }
 
 footer .footer-desc::before {
