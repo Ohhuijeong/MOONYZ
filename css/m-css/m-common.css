@@ -58,15 +58,26 @@ header .header-inner {
     width: 28px;
 }
 
+#header .ico-shop a {
+    width: 28px;
+    height: 28px;
+    background: url(../../img/icon/ico_shop_m.png) no-repeat center/contain;
+}
+
+#header .ico-shop a img {
+    display: none;
+}
+
 .gnb {
     background: url(../../img/gnb/mobile_subgnbBG.png) no-repeat center/contain;
     width: 100%;
     height: 555px;
-    transform: translate(0, -100% -70px);
+    transform: translateX(0);
+    transform: translateY(calc(-100% - 70px));
 }
 
 .gnb.active {
-    transform: translateY(0);
+    transform: translateY(-70px);
 }
 
 .gnb .close-btn {
