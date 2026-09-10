@@ -21,7 +21,7 @@ section {
 /* header */
 header {
     height: 30px;
-    margin-top: 70px;
+    margin-top: 35px;
 }
 
 header .header-inner {
@@ -47,6 +47,15 @@ header .header-inner {
 #header .gnb-btn {
     width: 28px;
     height: 28px;
+}
+
+#header .web-btn {
+    display: none;
+}
+
+#header .mobile-btn {
+    display: block;
+    width: 28px;
 }
 
 .gnb {

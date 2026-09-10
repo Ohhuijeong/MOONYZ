@@ -62,6 +62,10 @@ header .header-inner {
     z-index: 10;
 }
 
+#header .mobile-btn {
+    display: none;
+}
+
 .gnb {
     background: url(../img/gnb/subgnbBg.png) no-repeat center/cover;
     width: 320px;
