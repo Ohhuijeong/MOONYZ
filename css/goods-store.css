@@ -36,6 +36,17 @@ header .header-top {
     transform: translateY(-50%);
 }
 
+.ico-area .shopping-bag,
+.ico-area .my-page {
+    transform: translateY(0);
+    transition: 0.3s;
+}
+
+.ico-area .shopping-bag:hover,
+.ico-area .my-page:hover {
+    transform: translateY(-5px);
+}
+
 /* header-bottom */
 .header-bottom {
     height: 80px;
@@ -77,6 +88,10 @@ header .header-top {
     height: 30px;
     width: 280px;
     padding-inline: 10px;
+}
+
+.search-input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
 }
 
 .search-area .search-btn {
@@ -250,12 +265,21 @@ section .btn-area {
 
 section .all-view-btn {
     width: 250px;
-    height: 40px;
-    border: 1px solid #333;
+    height: 50px;
+    border: 2px solid #777;
+    color: #555;
     border-radius: 5px;
     font-family: 'Suit';
     font-size: 14px;
     font-weight: 800;
+    background: #fff;
+    transition: 0.2s;
+}
+
+.all-view-btn:hover {
+    background: #FFA2A2;
+    color: #fff;
+    border-color: #FFA2A2;
 }
 
 #new-products {

@@ -8,9 +8,17 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/main_animation.css">
+    <link rel="stylesheet" href="css/background_animaition.css">
+    <link rel="stylesheet" href="css/m-css/m-common.css" media="screen and (max-width: 640px)">
+    <link rel="stylesheet" href="css/m-css/m-main.css" media="screen and (max-width: 640px)">
 
     <script src="js/common.js" defer></script>
     <script src="js/mainScript.js" defer></script>
+    <script src="js/mainAnimation.js" defer></script>
+
+    <!-- GSAP Core 및 MotionPathPlugin 라이브러리 추가 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
 </head>
 
 <body>
@@ -71,6 +79,36 @@
                 </nav>
             </header>
 
+            <div id="background-animation">
+                <span class="fish1 fish1-t">
+                    <img src="img/main/fish1.png" alt="">
+                </span>
+
+                <span class="fish2">
+                    <img src="img/main/fish-c.png" alt="">
+                </span>
+
+                <span class="fish3">
+                    <img src="img/main/fish-r.png" alt="">
+                </span>
+
+                <span class="bubble bubble1">
+                    <img src="img/main/bubble-one.png" alt="">
+                </span>
+
+                <span class="bubble bubble2">
+                    <img src="img/main/bubble-three.png" alt="">
+                </span>
+
+                <span class="bubble bubble3">
+                    <img src="img/main/bubble-one.png" alt="">
+                </span>
+
+                <span class="bubble bubble4">
+                    <img src="img/main/bubble-two.png" alt="">
+                </span>
+            </div>
+
             <div class="main-gnb main-characters">
                 <a href="sub-universe.html">
                     <div class="gnb-hover characters-hover">
@@ -99,11 +137,21 @@
                 </svg>
             </div>
             <div class="main-gnb main-contact">
-                <a href="sub-contact.html">
+                <a href="sub-contact.html" class="beacon-link">
                     <div class="gnb-hover contact-hover">
                         <img src="img/gnb/gnbhover_contact.png" alt="">
                     </div>
                     <img src="img/main/main_contact.png" alt="파도동대(문의하기)">
+                    <!-- 등대 불빛 이펙트 -->
+                    <div class="light-mask">
+                        <div class="beacon-pivot">
+                            <div class="beam-group">
+                                <div class="beam"></div>
+                                <div class="beam beam--opposite"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="beacon-core"></div>
                 </a>
             </div>
             <div class="main-gnb main-contents">
@@ -112,6 +160,7 @@
                         <img src="img/gnb/gnbhover_contents.png" alt="">
                     </div>
                     <img src="img/main/main_contents.png" alt="파도동우체국(콘텐츠)">
+                    <img src="img/main/mailpost.png" class="contents-mail" alt="">
                 </a>
             </div>
             <div class="main-gnb main-popup">
@@ -122,6 +171,7 @@
                     <img src="img/main/main_popup.png" alt="조개시장(팝업공간)">
                 </a>
             </div>
+            <img src="img/MOONYZ/찡이.png" alt="" class="crab">
             <div class="main-gnb main-projects">
                 <a href="sub-projects.html">
                     <div class="gnb-hover projects-hover">
@@ -129,6 +179,9 @@
                     </div>
                     <img src="img/main/main_projects.png" alt="돛단배(무니즈 프로젝트)">
                 </a>
+            </div>
+            <div class="padodong">
+                <img src="img/main/main_marker.png" alt="">
             </div>
         </div>
 

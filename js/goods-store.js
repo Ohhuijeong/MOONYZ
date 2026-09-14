@@ -7,6 +7,9 @@ var swiper = new Swiper('.mySwiper', {
         delay: 3000,
         disableOnInteraction: false,
     },
+
+    speed: 1000,
+
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -39,14 +42,15 @@ var charactersSwiper = new Swiper('.charactersSwiper', {
 });
 
 document.addEventListener('click', (e) => {
-    if (e.target.closest('a')) {
+    const link = e.target.closest('a');
+    if (link && !link.closest('h1')) {
         e.preventDefault();
     }
 });
 
 //product-list
-$(document).ready(function() {
-    $('.like-btn').on('click', function(e) {
+$(document).ready(function () {
+    $('.like-btn').on('click', function (e) {
         e.preventDefault();
 
         $(this).toggleClass('on')
