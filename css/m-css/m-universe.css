@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+html,
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: block;
+}
+
+.horizontal-scroll {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.page-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.uni-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.uni-inner .web-book {
+    display: none;
+}
+
+.uni-inner .mobile-book {
+    display: block;
+}
+
+.uni-inner img {
+    width: 100%;
+    height: 286px;
+}
+
+.page,
+.pages {
+    width: 100%;
+    min-width: 393px;
+    flex: 0 0 393px;
+    background-color: #fff;
+}
+
+.pages img {
+    width: 373px;
+    height: auto;
+    margin-top: 100px;
+}
+
+.pages .text-area {
+    width: 280px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.page-wrap .page-next {
+    width: 393px;
+    height: 300px;
+    background-color: #fff;
+}
+
+.page-wrap .page-next a img {
+    width: 120px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
