@@ -76,6 +76,12 @@ section {
 }
 
 /* 액자 */
+.profile-list .profile-frame.gomi {
+    background-image: url("../img/characters/profile_frame/frame_web_big.png");
+    width: 296px;
+    height: 301px;
+}
+
 .profile-list .profile-frame {
     position: relative;
     width: 219px;
@@ -84,12 +90,6 @@ section {
     flex-shrink: 0;
     background: url("../img/characters/profile_frame/frame_web_small.png") no-repeat center/cover;
     background-size: contain;
-}
-
-.profile-list .profile-frame.gomi {
-    background-image: url("../img/characters/profile_frame/frame_web_big.png");
-    width: 296px;
-    height: 301px;
 }
 
 .profile-frame .characters-area {

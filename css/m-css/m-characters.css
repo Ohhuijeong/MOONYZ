@@ -1,0 +1,130 @@
+html,
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: block;
+}
+
+.horizontal-scroll {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.characterBg {
+    width: 393px;
+    height: 2350px;
+    position: relative;
+    z-index: 1;
+    background-image: url(../../img/characters/m_charactersBG.png);
+    background-position: top/contain;
+    background-size: 393px 2350px;
+}
+
+.characters-inner {
+    margin: 0 20px;
+}
+
+.background-animation {
+    display: none;
+}
+
+#logo-b>a {
+    width: 126px;
+    height: 28px;
+    top: 40px;
+}
+
+.profile-wrap {
+    width: 237px;
+    height: 2000px;
+    flex-shrink: 1;
+    position: absolute;
+    top: 220px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.profile-list {
+    position: static;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 22px;
+}
+
+/* 액자 */
+.profile-list .profile-frame.gomi {
+    background-image: url("../../img/characters/profile_frame/frame_web_big.png");
+    width: 212px;
+    height: 217px;
+}
+
+.profile-list .profile-frame {
+    position: relative;
+    width: 157px;
+    height: 165px;
+    flex-shrink: 1;
+    background: url("../../img/characters/profile_frame/frame_web_small.png") no-repeat center/cover;
+}
+
+.profile-frame .characters-area {
+    width: 100px;
+    height: 84px;
+}
+
+.profile-frame .characters-area.c1 {
+    width: 134px;
+    height: 113px;
+}
+
+.characters-area .character {
+    width: 76.4px;
+    height: 64.4px;
+}
+
+.characters-area .character.gomi {
+    width: 104px;
+    height: 87px;
+}
+
+.character.waddle img {
+    animation: none;
+}
+
+.profile-frame .characters-name {
+    font-size: 16px;
+    bottom: 5px;
+    left: 50%;
+}
+
+.profile-frame .characters-name.gomi {
+    font-size: 24px;
+}
+
+/* 모달 전체 영역 */
+.modal-modal {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* 가운데 모달 */
+.modal {
+    width: 336px;
+    height: 421px;
+    max-width: 100%;
+}
+
+/* 이미지 */
+.modal-image img {
+    height: 380px;
+}
+
+/* 닫기 버튼 */
+.modal .close-btn {
+    position: absolute;
+    top: -37px;
+    width: 32px;
+    height: 32px;
+}

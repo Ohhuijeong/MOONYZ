@@ -18,52 +18,62 @@ document.querySelectorAll('.characters-area').forEach(function (area) {
 const characters = [
     {
         name: "고미",
-        image: 'img/characters/profile_web/profile01.png'
+        image: 'img/characters/profile_web/profile01.png',
+        m_image: "img/characters/profile_mobile/m-profile01.png"
     },
 
     {
         name: "찡이",
-        image: 'img/characters/profile_web/profile02.png'
+        image: 'img/characters/profile_web/profile02.png',
+        m_image: "img/characters/profile_mobile/m-profile02.png"
     },
 
     {
         name: "부기",
-        image: 'img/characters/profile_web/profile03.png'
+        image: 'img/characters/profile_web/profile03.png',
+        m_image: "img/characters/profile_mobile/m-profile03.png"
     },
 
     {
         name: "꾸미",
-        image: 'img/characters/profile_web/profile04.png'
+        image: 'img/characters/profile_web/profile04.png',
+        m_image: "img/characters/profile_mobile/m-profile04.png"
     },
 
     {
         name: "펭구",
-        image: 'img/characters/profile_web/profile05.png'
+        image: 'img/characters/profile_web/profile05.png',
+        m_image: "img/characters/profile_mobile/m-profile05.png"
     },
 
     {
         name: "벼리",
-        image: 'img/characters/profile_web/profile06.png'
+        image: 'img/characters/profile_web/profile06.png',
+        m_image: "img/characters/profile_mobile/m-profile06.png"
     },
 
     {
         name: "범동",
-        image: 'img/characters/profile_web/profile07.png'
+        image: 'img/characters/profile_web/profile07.png',
+        m_image: "img/characters/profile_mobile/m-profile07.png"
     },
 
     {
         name: "모리",
-        image: 'img/characters/profile_web/profile08.png'
+        image: 'img/characters/profile_web/profile08.png',
+        m_image: "img/characters/profile_mobile/m-profile08.png"
     },
 
     {
         name: "뽁이",
-        image: 'img/characters/profile_web/profile09.png'
+        image: 'img/characters/profile_web/profile09.png',
+        m_image: "img/characters/profile_mobile/m-profile09.png"
     },
 
     {
         name: "해둥",
-        image: 'img/characters/profile_web/profile10.png'
+        image: 'img/characters/profile_web/profile10.png',
+        m_image: "img/characters/profile_mobile/m-profile10.png"
     },
 ];
 
@@ -87,9 +97,13 @@ function showModal(event) {
     const id = Number(button.dataset.id);
     /* id가 일치하는 캐릭터 찾기 */
     const character = characters[id - 1];
+    /* 화면 크기에 따라 이미지 선택 */
+    const image = window.innerWidth >= 640
+        ? character.image
+        : character.m_image;
     /* 캐릭터 이미지 출력 */
-    modal.innerHTML = ` 
-        <img src="${character.image}" alt="${character.name}"> 
+    modal.innerHTML = `
+        <img src="${image}" alt="${character.name}">
     `;
     /* 모달 열기 */
     modalModal.classList.add('show');
