@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 h2 {
     letter-spacing: -0.5px;
     margin-bottom: 30px;
@@ -109,6 +110,10 @@ header .header-top {
     padding-block: 0;
 }
 
+#main-slide .swiper-slide .mobile-slide {
+    display: none;
+}
+
 #main-slide .swiper .swiper-button-next,
 #main-slide .swiper .swiper-button-prev {
     background: #fff;
@@ -164,14 +169,6 @@ header .header-top {
     overflow: hidden;
 }
 
-.pic-area .tag-b {
-    background-color: #D3E1F4;
-}
-
-.recommend-pic-area .tag-p {
-    background-color: #FFE0DD;
-}
-
 /* character-slide */
 #charactersSlide {
     width: 100%;
@@ -201,6 +198,10 @@ header .header-top {
     align-items: center;
 }
 
+.m-all-view {
+    display: none;
+}
+
 /* 실제 원 */
 #charactersSlide .img-area {
     width: 200px;
@@ -221,10 +222,51 @@ header .header-top {
     transition: transform 0.5s ease;
 }
 
+.swiper-slide .gomi {
+    width: 170px;
+}
+
+.swiper-slide .bboki {
+    width: 134px;
+}
+
+.swiper-slide .haedoong {
+    width: 120px;
+}
+
+.swiper-slide .jjing {
+    width: 135px;
+}
+
+.swiper-slide .pengu {
+    width: 114px;
+}
+
+.swiper-slide .mori {
+    width: 129px;
+}
+
+.swiper-slide .bugi {
+    width: 135px;
+}
+
+.swiper-slide .kkumi {
+    width: 127px;
+}
+
+.swiper-slide .byeori {
+    width: 145px;
+}
+
+.swiper-slide .beomdong {
+    width: 130px;
+}
+
 /* active에서는 slide가 아니라 내부 원을 확대 */
 #charactersSlide .swiper-slide-active .img-area {
     transform: scale(1.5);
 }
+
 /* //캐릭터슬라이드 */
 
 /* best products, new products 공통 */

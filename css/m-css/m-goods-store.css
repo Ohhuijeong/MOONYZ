@@ -1,0 +1,283 @@
+@charset "utf-8";
+
+section .product-name {
+    font-size: 16px;
+}
+
+#header {
+    height: auto;
+    margin: 0;
+}
+
+#header .goods-shop-header-inner {
+    width: calc(100% - 40px);
+    max-width: none;
+}
+
+/* header-top */
+header .header-top {
+    height: 100px;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.header-top .ico-area {
+    position: static;
+    transform: translateY(0);
+    align-items: center;
+}
+
+/* header-bottom */
+.header-bottom {
+    height: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header-bottom .goods-shop-gnb {
+    margin-bottom: 20px;
+}
+
+.header-bottom .goods-shop-gnb ul {
+    gap: 13px;
+}
+
+.goods-shop-gnb ul a {
+    width: 60px;
+    height: 28px;
+    font-size: 14px;
+}
+
+.header-bottom .search-area {
+    margin-bottom: 30px;
+}
+
+.search-area .search-input {
+    border-radius: 8px;
+    border: 1px solid #6c6c6c;
+}
+
+/* //header */
+
+/* main-slide */
+#main-slide {
+    padding: 0;
+}
+
+#main-slide .inner {
+    width: 100%;
+}
+
+#main-slide .swiper-slide {
+    height: 250px;
+}
+
+#main-slide .swiper-slide .web-slide {
+    display: none;
+}
+
+#main-slide .swiper-slide .mobile-slide {
+    display: block;
+    object-fit: cover;
+}
+
+#main-slide .swiper .swiper-button-next,
+#main-slide .swiper .swiper-button-prev {
+    display: none;
+}
+
+/* //main-slide */
+
+/* recommend-products */
+#recommend-products .inner {
+    width: calc(100% - 40px);
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+#recommend-products .recommend-list {
+    width: max-content;
+}
+
+#recommend-products .recommend-list::-webkit-scrollbar {
+    display: none;
+}
+
+.recommend-list li {
+    position: relative;
+    width: 215px;
+    flex: 0 0 215px;
+}
+
+.recommend-list li .badge {
+    top: -5px;
+    left: 0px;
+    width: 60px;
+    height: 60px;
+}
+
+.recommend-list .pic-area {
+    height: 215px;
+}
+
+.recommend-list .product-desc {
+    font-size: 12px;
+}
+
+/* character-slide */
+#charactersSlide {
+    height: auto;
+    background: #fff;
+    padding-inline: 20px;
+}
+
+#charactersSlide .charactersSwiper {
+    height: auto;
+}
+
+#charactersSlide .charactersSwiper .swiper-wrapper {
+    align-items: center;
+}
+
+#charactersSlide .charactersSwiper .swiper-slide {
+    width: 100px;
+    height: 125px;
+    border-radius: 10px;
+}
+
+#charactersSlide .charactersSwiper .gomi-slide {
+    width: 150px;
+}
+
+.m-all-view {
+    display: block;
+    font-family: 'NostalgicMongtori';
+    color: #979797;
+    font-size: 14px;
+    border: 1px
+}
+
+/* 사각형 배경 */
+#charactersSlide .img-area {
+    width: 100%;
+    height: 120px;
+    border-radius: 10px;
+    transition: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+/* 캐릭터 이미지 */
+#charactersSlide .character-img img {
+    transition: none;
+}
+
+.swiper-slide .gomi {
+    width: 90px;
+}
+
+.swiper-slide .bboki {
+    width: 55px;
+}
+
+.swiper-slide .haedoong {
+    width: 50px;
+}
+
+.swiper-slide .jjing {
+    width: 55px;
+}
+
+.swiper-slide .pengu {
+    width: 48px;
+}
+
+.swiper-slide .mori {
+    width: 60px;
+}
+
+.swiper-slide .bugi {
+    width: 55px;
+}
+
+.swiper-slide .kkumi {
+    width: 52px;
+}
+
+.swiper-slide .byeori {
+    width: 55px;
+}
+
+.swiper-slide .beomdong {
+    width: 65px;
+}
+
+#charactersSlide .swiper-slide-active .img-area {
+    transform: none;
+}
+
+/* //캐릭터슬라이드 */
+
+/* best products, new products 공통 */
+section .product-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.product-list>li {
+    width: 345px;
+}
+
+.product-list .pic-area {
+    position: relative;
+    height: 345px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+section .pic-area img {
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+section .pic-area:hover>img {
+    transform: scale(1.1);
+}
+
+.pic-area .like-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 100;
+}
+
+section .btn-area {
+    text-align: center;
+}
+
+section .all-view-btn {
+    width: 250px;
+    height: 50px;
+    border: 2px solid #777;
+    color: #555;
+    border-radius: 5px;
+    font-family: 'Suit';
+    font-size: 14px;
+    font-weight: 800;
+    background: #fff;
+    transition: 0.2s;
+}
+
+.all-view-btn:hover {
+    background: #FFA2A2;
+    color: #fff;
+    border-color: #FFA2A2;
+}
+
+#new-products {
+    padding-top: 0;
+}
