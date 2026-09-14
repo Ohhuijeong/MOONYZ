@@ -1,22 +1,3 @@
-/* === popup swiper === */
-
-const popupSwiper = new Swiper(".swiper-area", {
-    slidesPerView: "auto",
-    centeredSlides: false,
-    spaceBetween: 24,
-    loop: false,
-    grabCursor: true,
-
-    slidesOffsetBefore: 240,
-    slidesOffsetAfter: 240,
-
-    initialSlide: 1
-});
-
-popupSwiper.setTranslate(
-    popupSwiper.getTranslate() + 100
-);
-
 /* === popup category === */
 
 const categoryBtns =
@@ -31,6 +12,35 @@ const popupSlideSection =
 const currentPopupList =
     document.querySelector(".current-popup-list");
 
+    /* === popup swiper === */
+
+const popupSwiper = new Swiper(".swiper-area", {
+    slidesPerView: "auto",
+    centeredSlides: false,
+    spaceBetween: 24,
+
+    loop: false,
+    grabCursor: true,
+
+    slidesOffsetBefore: 240,
+    slidesOffsetAfter: 240,
+});
+
+
+/* === 첫 화면 : 3번째 카드 중앙 === */
+
+popupSwiper.update();
+
+const thirdSlide = popupSlides[2];
+
+const thirdCenter =
+    thirdSlide.offsetLeft +
+    thirdSlide.offsetWidth / 2;
+
+const screenCenter =
+    popupSwiper.width / 2;
+
+popupSwiper.setTranslate(-(thirdCenter - screenCenter));
 
 /* === 처음 화면 지그재그 === */
 
@@ -155,24 +165,41 @@ categoryBtns.forEach((btn) => {
 
         if (filter === "all") {
 
-            popupSlideSection.classList.remove("past-mode");
+    popupSlideSection.classList.remove("past-mode");
 
-            popupSwiper.params.centeredSlides = true;
-            popupSwiper.update();
+    popupSwiper.params.centeredSlides = false;
+    popupSwiper.params.slidesOffsetBefore = 240;
+    popupSwiper.params.slidesOffsetAfter = 240;
 
-            popupSwiper.slideTo(2);
+    popupSwiper.update();
 
-        }
-        else if (filter === "past") {
 
-            popupSlideSection.classList.add("past-mode");
+    /* 3번째 카드 중앙 */
 
-            popupSwiper.params.centeredSlides = false;
-            popupSwiper.update();
+    const thirdSlide = popupSlides[2];
 
-            popupSwiper.slideTo(0);
+    const center =
+        (popupSwiper.width / 2) -
+        (thirdSlide.offsetWidth / 2);
 
-        }
+    const thirdPosition = thirdSlide.offsetLeft;
+
+    popupSwiper.setTranslate(-(thirdPosition - center));
+
+}
+else if (filter === "past") {
+
+    popupSlideSection.classList.add("past-mode");
+
+    popupSwiper.params.centeredSlides = false;
+    popupSwiper.params.slidesOffsetBefore = 240;
+    popupSwiper.params.slidesOffsetAfter = 240;
+
+    popupSwiper.update();
+
+    popupSwiper.slideTo(0, 0);
+
+}
 
     });
 
