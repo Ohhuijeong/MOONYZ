@@ -159,6 +159,10 @@ i {
     right: 50px;
 }
 
+.contact-area .next{
+    display: none;
+}
+
 /* FAQ */
 .faq {
     width: 1174px;
