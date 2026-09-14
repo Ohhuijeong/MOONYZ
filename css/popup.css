@@ -399,7 +399,8 @@ section .swiper-area {
 /* 이벤트 텍스트 */
 .text-area {
     width: 40%;
-    font-size: 18;
+    word-break: keep-all;
+    font-size: 18px;
     font-weight: 600;
 }
 
