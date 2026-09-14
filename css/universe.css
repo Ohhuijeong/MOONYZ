@@ -44,6 +44,14 @@ section {
     height: 712px;
 }
 
+.uni-inner .web-book {
+    display: block;
+}
+
+.uni-inner .mobile-book {
+    display: none;
+}
+
 .page,
 .pages {
     width: 1920px;
