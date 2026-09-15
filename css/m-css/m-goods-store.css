@@ -7,8 +7,12 @@ section .product-name {
 }
 
 #header {
+    position: static;
     height: auto;
-    margin: 0;
+}
+
+.gnb.active {
+    transform: translateY(-140px);
 }
 
 #header .goods-shop-header-inner {
@@ -28,6 +32,11 @@ header .header-top {
     position: static;
     transform: translateY(0);
     align-items: center;
+}
+
+.ico-area span {
+    width: 28px;
+    height: 28px;
 }
 
 /* header-bottom */
@@ -254,4 +263,12 @@ section .all-view-btn {
 
 #new-products {
     padding-top: 35px;
+}
+
+#seasonSale .inner {
+    width: 100%;
+}
+
+#seasonSale img {
+    height: 80px;
 }
