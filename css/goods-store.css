@@ -198,10 +198,6 @@ header .header-top {
     align-items: center;
 }
 
-.m-all-view {
-    display: none;
-}
-
 /* 실제 원 */
 #charactersSlide .img-area {
     width: 200px;
@@ -264,7 +260,7 @@ header .header-top {
 
 /* active에서는 slide가 아니라 내부 원을 확대 */
 #charactersSlide .swiper-slide-active .img-area {
-    transform: scale(1.5);
+    transform: scale(1.3);
 }
 
 /* 캐릭터슬라이드 */

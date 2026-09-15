@@ -32,7 +32,7 @@ var charactersSwiper = new Swiper('.charactersSwiper', {
     spaceBetween: requiredGap,
     roundLengths: true,
 
-    loop: true,
+    loop: false,
     speed: 500,
 
     navigation: {
@@ -52,7 +52,7 @@ var charactersSwiper = new Swiper('.charactersSwiper', {
             slidesPerView: 5.8,
             spaceBetween: requiredGap,
             centeredSlides: true,
-            loop: true
+            loop: false
         }
     }
 });
