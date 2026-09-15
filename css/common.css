@@ -22,6 +22,10 @@ img {
     display: block;
 }
 
+button {
+    transition: background-color 1s ease;
+}
+
 .inner {
     max-width: 1440px;
     position: relative;
