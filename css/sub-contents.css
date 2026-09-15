@@ -31,11 +31,6 @@ body {
 }
 
 /* ===gnb=== */
-#header #gnbBtn {
-    height: 36px;
-    width: 103px;
-}
-
 .ico-shop {
     opacity: 0;
     visibility: hidden;
