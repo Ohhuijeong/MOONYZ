@@ -68,7 +68,7 @@ header .header-inner {
 }
 
 .gnb {
-    background: url(../../img/gnb/mobile_subgnbBG.png) no-repeat center/contain;
+    background: url(../../img/gnb/mobile_subgnbBG.png) no-repeat center/cover;
     width: 100%;
     height: 555px;
     transform: translateX(0);
