@@ -5,6 +5,7 @@
     top: 100px;
     width: 100%;
     height: calc(100vh - 100px);
+    overflow-x: hidden;
 }
 
 #background-animation>span {
