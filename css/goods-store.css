@@ -305,10 +305,6 @@ section .pic-area:hover>img {
     z-index: 100;
 }
 
-.product-list .product-name {
-    font-size: 20px;
-}
-
 section .btn-area {
     text-align: center;
 }

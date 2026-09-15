@@ -1,5 +1,7 @@
 @charset "utf-8";
-
+section h2 {
+    margin-bottom: 20px;
+}
 section .product-name {
     font-size: 16px;
 }
@@ -135,6 +137,8 @@ header .header-top {
 
 #charactersSlide .charactersSwiper {
     height: auto;
+    padding: 0 3px;
+    margin: 0 -3px;
 }
 
 #charactersSlide .charactersSwiper .swiper-wrapper {
@@ -221,54 +225,38 @@ header .header-top {
 
 /* best products, new products 공통 */
 section .product-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 50px;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-bottom: 20px;
 }
 
 .product-list>li {
-    width: 345px;
+    width: 100%;
 }
 
 .product-list .pic-area {
-    position: relative;
-    height: 345px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-section .pic-area img {
-    object-fit: cover;
-    transition: 0.3s;
-}
-
-section .pic-area:hover>img {
-    transform: scale(1.1);
+    height: 175px;
+    margin-bottom: 5px;
 }
 
 .pic-area .like-btn {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    z-index: 100;
-}
-
-section .btn-area {
-    text-align: center;
+    top: 10px;
+    right: 10px;
+    width: 26px;
+    height: 26px;
 }
 
 section .all-view-btn {
-    width: 250px;
-    height: 50px;
-    border: 2px solid #777;
-    color: #555;
+    width: 165px;
+    height: 40px;
+    border: 2px solid #FFA2A2;
+    color: #fff;
     border-radius: 5px;
-    font-family: 'Suit';
-    font-size: 14px;
-    font-weight: 800;
-    background: #fff;
+    font-weight: 600;
+    background: #FFA2A2;
     transition: 0.2s;
 }
 
@@ -279,5 +267,5 @@ section .all-view-btn {
 }
 
 #new-products {
-    padding-top: 0;
+    padding-top: 35px;
 }
