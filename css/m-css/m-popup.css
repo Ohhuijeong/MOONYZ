@@ -222,6 +222,11 @@ section .swiper-area {
     font-size: 13px;
 }
 
+.viewAll span {
+    width: 13px;
+    height: 13px;
+}
+
 .viewAll .sub-title {
     font-size: 13px;
 }
@@ -290,9 +295,10 @@ section .swiper-area {
 
 /* 이벤트 이미지 */
 .img-area {
-    width: 100%;
+    width: 80%;
     height: 230px;
 
+    margin: auto;
     margin-top: auto;
 
     border-radius: 20px;
