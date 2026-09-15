@@ -313,12 +313,6 @@ section .swiper-area {
 
 /* ===event & program=== */
 
-.event-program {
-    padding-top: 48px;
-    /* padding-bottom: 150px; */
-}
-
-
 /* title */
 .title-area {
     display: flex;
@@ -330,7 +324,7 @@ section .swiper-area {
 
 .title-area .title {
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .viewAll {
