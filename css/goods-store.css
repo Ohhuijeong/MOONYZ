@@ -267,8 +267,7 @@ header .header-top {
     transform: scale(1.5);
 }
 
-/* //캐릭터슬라이드 */
-
+/* 캐릭터슬라이드 */
 /* best products, new products 공통 */
 section .product-list {
     display: flex;
@@ -295,7 +294,8 @@ section .pic-area img {
 }
 
 section .pic-area:hover>img {
-    transform: scale(1.1);
+    transform: scale(1.06);
+    transition: all .3s;
 }
 
 .pic-area .like-btn {
