@@ -71,7 +71,7 @@ header .header-inner {
     background: url(../../img/gnb/mobile_subgnbBG.png) no-repeat center/cover;
     width: 100%;
     height: calc(100vw * 560 / 393);
-    aspect-ratio: 393 * 560;
+    aspect-ratio: 393 / 560;
     transform: translateX(0);
     transform: translateY(calc(-100% - 70px));
 }
