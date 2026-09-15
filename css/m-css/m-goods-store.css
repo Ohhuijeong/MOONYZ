@@ -102,14 +102,10 @@ header .header-top {
 /* //main-slide */
 
 /* recommend-products */
-#recommend-products .inner {
-    width: calc(100% - 40px);
+#recommend-products .recommend-list {
+    width: 100%;
     overflow-x: auto;
     scrollbar-width: none;
-}
-
-#recommend-products .recommend-list {
-    width: max-content;
 }
 
 #recommend-products .recommend-list::-webkit-scrollbar {
