@@ -312,12 +312,6 @@ section .swiper-area {
 
 /* ===event & program=== */
 
-.event-program {
-    padding-top: 48px;
-    /* padding-bottom: 150px; */
-}
-
-
 /* title */
 .title-area {
     display: flex;
@@ -329,7 +323,7 @@ section .swiper-area {
 
 .title-area .title {
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .viewAll {
@@ -399,7 +393,8 @@ section .swiper-area {
 /* 이벤트 텍스트 */
 .text-area {
     width: 40%;
-    font-size: 18;
+    word-break: keep-all;
+    font-size: 18px;
     font-weight: 600;
 }
 
