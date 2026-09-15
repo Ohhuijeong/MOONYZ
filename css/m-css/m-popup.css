@@ -315,14 +315,7 @@ section .swiper-area {
 /* ===EVENT SWIPER BUTTON==== */
 .event-swiper .swiper-button-next,
 .event-swiper .swiper-button-prev {
-    width: 0;
-    height: 0;
-}
-
-.event-swiper .swiper-button-next img,
-.event-swiper .swiper-button-prev img {
-    width: 0;
-    height: 0;
+    display: none;
 }
 
 /* swiper 기본 화살표 제거 */
