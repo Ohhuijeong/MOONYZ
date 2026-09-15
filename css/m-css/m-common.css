@@ -70,7 +70,7 @@ header .header-inner {
 .gnb {
     background: url(../../img/gnb/mobile_subgnbBG.png) no-repeat center/cover;
     width: 100%;
-    height: 555px;
+    height: calc(100vw * 560 / 393);
     transform: translateX(0);
     transform: translateY(calc(-100% - 70px));
 }
