@@ -1,5 +1,14 @@
 @charset "utf-8";
 
+header {
+    position: static;
+    margin-top: 70px;
+}
+
+.gnb.active {
+    transform: translateY(0);
+}
+
 /* ===popup page=== */
 .popup-page {
     padding-top: 20px;

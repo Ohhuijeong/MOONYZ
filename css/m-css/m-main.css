@@ -2,8 +2,10 @@
 
 /* 메인화면 */
 #main-visual {
+    height: calc(100vw * 852 / 393);
     background: url(../../img/main/m_mainBG.png) no-repeat center/cover;
     position: relative;
+    overflow-x: hidden;
 }
 
 /* header */

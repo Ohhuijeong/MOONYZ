@@ -13,13 +13,6 @@ section {
     background: url(../../img/project/m-projectBG02.jpg) no-repeat center/cover;
 }
 
-#projectBg header {
-    margin: 0;
-    position: absolute;
-    top: 35px;
-    width: 100%;
-}
-
 /* swiper 영역 */
 #projectSlider .board-area {
     width: calc(100vw * 330 / 393);
@@ -49,10 +42,6 @@ section {
 #projectSlider .swiper-button-prev {
     left: 4%;
     background-image: url(../../img/icon/ico_project_previous.png);
-}
-
-.project-slide.hover {
-    display: none;
 }
 
 /* detail-board */
