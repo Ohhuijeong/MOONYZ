@@ -15,13 +15,13 @@ body::-webkit-scrollbar {
 }
 
 .characterBg {
-    width: 393px;
+    width: 100%;
     height: 2350px;
     position: relative;
     z-index: 1;
     background-image: url(../../img/characters/m_charactersBG.png);
-    background-position: top/contain;
-    background-size: 393px 2350px;
+    background-position: top/cover;
+    background-size: 100% 2350px;
 }
 
 .characters-inner {

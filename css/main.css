@@ -13,6 +13,7 @@ body {
     /* 1021px */
     background: url(../img/main/mainBG.png) no-repeat center/cover;
     position: relative;
+    padding-top: 0;
 }
 
 /* header */
