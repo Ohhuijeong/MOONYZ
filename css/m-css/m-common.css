@@ -6,7 +6,6 @@ html {
 
 body {
     font-size: 1.6rem;
-
 }
 
 section {
@@ -30,13 +29,13 @@ header .header-inner {
 }
 
 #logo-b>a {
-    width: 126px;
-    height: 28px;
+    width: 122px;
+    height: 24px;
 }
 
 #logo-p>a {
-    width: 126px;
-    height: 28px;
+    width: 122px;
+    height: 24px;
 }
 
 #logo-p a,
