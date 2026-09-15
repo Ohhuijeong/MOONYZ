@@ -1,6 +1,4 @@
 @charset "utf-8";
-@import url(fonts.css);
-@import url(reset.css);
 
 /* ===scrollbar=== */
 html,
@@ -28,6 +26,7 @@ body {
     height: 2500px;
     background: url(../img/contents/contentsBG.png) no-repeat top/cover;
     position: relative;
+    padding-top: 0;
 }
 
 /* ===gnb=== */
@@ -39,7 +38,7 @@ body {
 /* ===contents=== */
 .contents-card {
     position: absolute;
-    top: 42%;
+    top: 10.7%;
     left: 50%;
     transform: translateX(-50%);
 
@@ -71,11 +70,6 @@ body {
     transform: translate(-50%, 25px);
 }
 
-/* 엽서 그림자 */
-/* .card-mask>img {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-} */
-
 /* ===modal=== */
 .contents-modal {
     position: fixed;
@@ -101,13 +95,14 @@ body {
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 .modal-box {
     position: relative;
 
     width: 500px;
-    min-height: 700px;
+    min-height: 600px;
 
     background: url(../img/contents/contents_modal.png) no-repeat center/contain;
 
@@ -128,7 +123,7 @@ body {
 
 .modal-text {
     font-family: 'OngleipRyudung';
-    font-size: 24px;
+    font-size: 30px;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 40px;
 }
