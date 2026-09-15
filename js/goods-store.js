@@ -32,7 +32,7 @@ var charactersSwiper = new Swiper('.charactersSwiper', {
     spaceBetween: requiredGap,
     roundLengths: true,
 
-    loop: false,
+    loop: true,
     speed: 500,
 
     navigation: {
