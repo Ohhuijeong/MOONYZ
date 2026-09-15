@@ -32,13 +32,29 @@ var charactersSwiper = new Swiper('.charactersSwiper', {
     spaceBetween: requiredGap,
     roundLengths: true,
 
-    loop: true,
+    loop: false,
     speed: 500,
 
     navigation: {
         nextEl: ".characters-next",
         prevEl: ".characters-prev",
     },
+
+    breakpoints: {
+        0: {
+            slidesPerView: 'auto',
+            spaceBetween: 15,
+            centeredSlides: false,
+            loop: false
+        },
+
+        641: {
+            slidesPerView: 5.8,
+            spaceBetween: requiredGap,
+            centeredSlides: true,
+            loop: false
+        }
+    }
 });
 
 document.addEventListener('click', (e) => {

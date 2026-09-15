@@ -1,0 +1,257 @@
+@charset "utf-8";
+section h2 {
+    margin-bottom: 20px;
+}
+section .product-name {
+    font-size: 16px;
+}
+
+#header {
+    height: auto;
+    margin: 0;
+}
+
+#header .goods-shop-header-inner {
+    width: calc(100% - 40px);
+    max-width: none;
+}
+
+/* header-top */
+header .header-top {
+    height: 100px;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.header-top .ico-area {
+    position: static;
+    transform: translateY(0);
+    align-items: center;
+}
+
+/* header-bottom */
+.header-bottom {
+    height: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header-bottom .goods-shop-gnb {
+    margin-bottom: 20px;
+}
+
+.header-bottom .goods-shop-gnb ul {
+    gap: 13px;
+}
+
+.goods-shop-gnb ul a {
+    width: 60px;
+    height: 28px;
+    font-size: 14px;
+}
+
+.header-bottom .search-area {
+    margin-bottom: 30px;
+}
+
+.search-area .search-input {
+    border-radius: 8px;
+    border: 1px solid #6c6c6c;
+}
+
+/* //header */
+
+/* main-slide */
+#main-slide {
+    padding: 0;
+}
+
+#main-slide .inner {
+    width: 100%;
+}
+
+#main-slide .swiper-slide {
+    height: 250px;
+}
+
+#main-slide .swiper-slide .web-slide {
+    display: none;
+}
+
+#main-slide .swiper-slide .mobile-slide {
+    display: block;
+    object-fit: cover;
+}
+
+#main-slide .swiper .swiper-button-next,
+#main-slide .swiper .swiper-button-prev {
+    display: none;
+}
+
+/* //main-slide */
+
+/* recommend-products */
+#recommend-products .inner {
+    width: calc(100% - 40px);
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+#recommend-products .recommend-list {
+    width: max-content;
+}
+
+#recommend-products .recommend-list::-webkit-scrollbar {
+    display: none;
+}
+
+.recommend-list li {
+    position: relative;
+    width: 215px;
+    flex: 0 0 215px;
+}
+
+.recommend-list li .badge {
+    top: -5px;
+    left: 0px;
+    width: 60px;
+    height: 60px;
+}
+
+.recommend-list .pic-area {
+    height: 215px;
+}
+
+.recommend-list .product-desc {
+    font-size: 12px;
+}
+
+/* character-slide */
+#charactersSlide {
+    height: auto;
+    background: #fff;
+    padding-inline: 20px;
+}
+
+#charactersSlide .charactersSwiper {
+    height: auto;
+    padding: 0 3px;
+    margin: 0 -3px;
+}
+
+#charactersSlide .charactersSwiper .swiper-wrapper {
+    align-items: center;
+}
+
+#charactersSlide .charactersSwiper .swiper-slide {
+    width: 100px;
+    height: 125px;
+    border-radius: 10px;
+}
+
+#charactersSlide .charactersSwiper .gomi-slide {
+    width: 150px;
+}
+
+/* 사각형 배경 */
+#charactersSlide .img-area {
+    width: 100%;
+    height: 120px;
+    border-radius: 10px;
+    transition: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+/* 캐릭터 이미지 */
+#charactersSlide .character-img img {
+    transition: none;
+}
+
+.swiper-slide .gomi {
+    width: 90px;
+}
+
+.swiper-slide .bboki {
+    width: 55px;
+}
+
+.swiper-slide .haedoong {
+    width: 50px;
+}
+
+.swiper-slide .jjing {
+    width: 55px;
+}
+
+.swiper-slide .pengu {
+    width: 48px;
+}
+
+.swiper-slide .mori {
+    width: 60px;
+}
+
+.swiper-slide .bugi {
+    width: 55px;
+}
+
+.swiper-slide .kkumi {
+    width: 52px;
+}
+
+.swiper-slide .byeori {
+    width: 55px;
+}
+
+.swiper-slide .beomdong {
+    width: 65px;
+}
+
+#charactersSlide .swiper-slide-active .img-area {
+    transform: none;
+}
+
+/* //캐릭터슬라이드 */
+
+/* best products, new products 공통 */
+section .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.product-list>li {
+    width: 100%;
+}
+
+.product-list .pic-area {
+    height: 175px;
+    margin-bottom: 10px;
+}
+
+.pic-area .like-btn {
+    top: 10px;
+    right: 10px;
+    width: 26px;
+    height: 26px;
+}
+
+section .all-view-btn {
+    width: 100%;
+    height: 40px;
+    border: 2px solid #FFA2A2;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 600;
+    background: #FFA2A2;
+    transition: 0.2s;
+}
+
+#new-products {
+    padding-top: 35px;
+}

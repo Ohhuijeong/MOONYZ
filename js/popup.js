@@ -200,6 +200,11 @@ const eventSwiper = new Swiper(".event-swiper", {
 
     speed: 1000,
 
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+
     navigation: {
         nextEl:
             ".event-swiper .swiper-button-next",

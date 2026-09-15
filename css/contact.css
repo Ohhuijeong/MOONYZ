@@ -102,6 +102,18 @@ i {
     background-color: #FEF5B9;
 }
 
+.contact-area .notice:hover {
+    background-color: #BFD2EB;
+}
+
+.contact-area .consult:hover {
+    background-color: #DDDAD1;
+}
+
+.contact-area .contact:hover {
+    background-color: #F9EDAA;
+}
+
 .contact-area .notice h2 {
     text-align: center;
     line-height: 216px;
@@ -157,6 +169,10 @@ i {
     position: absolute;
     top: 20px;
     right: 50px;
+}
+
+.contact-area .next {
+    display: none;
 }
 
 /* FAQ */
