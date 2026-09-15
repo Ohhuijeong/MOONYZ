@@ -52,7 +52,7 @@ var charactersSwiper = new Swiper('.charactersSwiper', {
             slidesPerView: 5.8,
             spaceBetween: requiredGap,
             centeredSlides: true,
-            loop: false
+            loop: true
         }
     }
 });
