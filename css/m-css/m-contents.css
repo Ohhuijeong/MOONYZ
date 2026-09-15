@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+/* ===contents-visual=== */
+#contents-visual {
+    width: 100%;
+    height: 1830px;
+    background: url(../../img/contents/m_contentsBG.png) no-repeat top/contain;
+}
+
+header {
+    margin-top: 0;
+    padding-top: 70px;
+}
+
+section {
+    padding-block: 0;
+}
+
+/* ===contents=== */
+.contents-card {
+    top: 11.15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 257.5px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22.5px 20px;
+}
+
+.card-mask {
+    height: 124px;
+}
+
+.card-mask img {
+    transform: translate(-50%, 35px);
+}
+
+/* hover 하면 엽서만 위로 */
+.card-item:hover .card-mask img {
+    transform: translate(-50%, 25px);
+}
+
+/* ===modal=== */
+
+.modal-box {
+    width: 300px;
+    min-height: 350px;
+    height: 350px;
+    background: url(../../img/contents/contents_modal.png) no-repeat center/contain;
+}
+
+.modal-img {
+    width: 80%;
+    height: 200px;
+    margin-top: 80px;
+}
+
+.modal-text {
+    font-size: 20px;
+    margin-top: 13px;
+}
+
+/* 마지막 넘치는 사진 삭제 */
+.card-item[data-modal="21"] {
+    display: none;
+}

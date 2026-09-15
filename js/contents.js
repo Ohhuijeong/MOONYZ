@@ -132,10 +132,13 @@ cardItems.forEach((card) => {
 
 
 /* 어두운 배경 클릭 */
-modalBg.addEventListener("click", () => {
+modal.addEventListener("click", (e) => {
 
-    modal.classList.remove("active");
+    if (e.target === modal || e.target === modalBg) {
 
-    document.body.style.overflow = "";
+        modal.classList.remove("active");
+
+        document.body.style.overflow = "";
+    }
 
 });
