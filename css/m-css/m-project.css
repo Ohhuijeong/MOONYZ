@@ -16,8 +16,7 @@ section {
 /* swiper 영역 */
 #projectSlider .board-area {
     width: calc(100vw * 330 / 393);
-    height: auto;
-    aspect-ratio: 330 / 270;
+    height: calc(100vw * 270 / 393);
     padding: calc(100vw * 20 / 393)
             calc(100vw * 25 / 393)
             calc(100vw * 40 / 393);
