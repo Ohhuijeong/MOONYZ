@@ -27,6 +27,34 @@ section {
     transform: translate(-50%, -50%);
 }
 
+#projectSlider .swiper-area {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#projectSlider .projectSwiper {
+    width: 100%;
+    height: 100%;
+}
+
+#projectSlider .swiper-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide.project-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.project-slide > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 #projectSlider .swiper-button-next,
 #projectSlider .swiper-button-prev {
     box-sizing: border-box;
