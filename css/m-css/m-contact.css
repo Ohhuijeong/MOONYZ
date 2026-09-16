@@ -1,5 +1,16 @@
+@charset "utf-8";
+
 section {
     padding-block: 70px;
+}
+
+header {
+    position: static;
+    margin-top: 70px;
+}
+
+.gnb.active {
+    transform: translateY(0);
 }
 
 .top-contact {
@@ -196,6 +207,7 @@ section {
 }
 
 .question-wrap .question-card h3 {
+    width: auto;
     margin-bottom: 5px;
     font-size: 16px;
     word-break: keep-all;

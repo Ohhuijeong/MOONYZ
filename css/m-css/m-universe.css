@@ -21,6 +21,14 @@ body::-webkit-scrollbar {
     flex-direction: column;
     width: 100vw;
 }
+header {
+    position: static;
+    margin-top: 35px;
+}
+
+.gnb.active {
+    transform: translateY(0);
+}
 
 .uni-inner {
     display: flex;
