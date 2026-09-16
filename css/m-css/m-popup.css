@@ -367,6 +367,8 @@ section .swiper-area {
     grid-template-columns: repeat(2, 1fr);
 
     gap: 8px;
+
+    color: #222;
 }
 
 
