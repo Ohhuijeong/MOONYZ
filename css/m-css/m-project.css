@@ -10,6 +10,7 @@ section {
 }
 
 #projectBg {
+    height: calc(100vw * 852 / 393);
     background: url(../../img/project/m-projectBG02.jpg) no-repeat center/cover;
 }
 
@@ -83,6 +84,11 @@ section {
 #projectSlider .swiper-button-prev {
     left: 4%;
     background-image: url(../../img/icon/ico_project_previous.png);
+}
+
+.project-slide .slide-hover .detail-btn {
+    width: 100px;
+    height: 25px;
 }
 
 /* detail-board */
