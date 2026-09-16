@@ -188,7 +188,7 @@ i {
 }
 
 .faq .question-wrap {
-    width: 1174px;
+    width: 100%;
     height: 313px;
     display: flex;
     justify-content: space-between;
