@@ -2,9 +2,9 @@
 
 #background-animation {
     position: absolute;
-    top: 100px;
+    top: 0;
     width: 100%;
-    height: calc(100vh - 100px);
+    height: 100vh;
     overflow-x: hidden;
 }
 
@@ -20,7 +20,7 @@
 .fish1 {
     width: 100px;
     height: 40px;
-    top: 0;
+    top: 220px;
     left: 300px;
     animation: fish1Move 20s infinite;
 }
@@ -61,7 +61,7 @@
 .fish2 {
     width: 120px;
     height: 38px;
-    top: 170px;
+    top: 270px;
     left: 56%;
     animation: fish2Move 30s infinite;
     animation-delay: -3s;
@@ -108,7 +108,7 @@
 .fish3 {
     width: 120px;
     height: 46px;
-    top: 0;
+    top: 100px;
     right: 150px;
     animation: fish3Move 20s infinite;
 }
@@ -143,26 +143,26 @@
 .bubble3 {
     width: 50px;
     height: 70px;
-    top: 160px;
+    top: 290px;
     left: 260px;
 }
 
 .bubble2 {
     width: 24px;
     height: 100px;
-    top: 140px;
+    top: 270px;
     left: 670px;
 }
 
 .bubble3 {
-    top: 140px;
-    left: 55%;
+    top: 270px;
+    left: 57%;
 }
 
 .bubble4 {
     width: 35px;
     height: 70px;
-    top: 135px;
+    top: 265px;
     right: 350px;
 }
 
