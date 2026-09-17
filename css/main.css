@@ -1,5 +1,15 @@
 @charset "utf-8";
 
+html, body {
+    ::-webkit-scrollbar {
+    display: none;
+  }
+
+  scrollbar-width: none;
+
+  -ms-overflow-style: none;
+}
+
 body {
     /* 메인 마우스 포인터 */
     cursor: url(../img/cursor/main_cursor.png)0 0, auto;
