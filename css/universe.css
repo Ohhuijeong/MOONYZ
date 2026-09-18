@@ -52,9 +52,11 @@ section {
 .uni-inner span img {
     display: block;
     position: absolute;
-    width: 110px;
+    width: 120px;
+    top: 53%;
     left: 50%;
     transform: translateX(-50%);
+    opacity: 0.9;
 }
 
 .uni-inner .mobile-book {
