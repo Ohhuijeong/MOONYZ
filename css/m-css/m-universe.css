@@ -37,6 +37,10 @@ header {
     padding-top: 50px;
 }
 
+.uni-inner::after {
+    display: none;
+}
+
 .uni-inner .web-book {
     display: none;
 }
@@ -68,6 +72,7 @@ header {
     width: 280px;
     position: relative;
     margin-top: 50px;
+    word-break: keep-all;
 }
 
 .page-wrap .page-next {
