@@ -3,7 +3,7 @@
 .fish1 {
     width: 50px;
     height: 12px;
-    top: 10px;
+    top: 110px;
     left: 0;
     animation: fish1Move 10s infinite;
 }
@@ -44,7 +44,7 @@
 .fish2 {
     width: 60px;
     height: 12px;
-    top: 50px;
+    top: 150px;
     left: 45%;
     animation: fish2Move 10s infinite;
     animation-delay: -3s;
@@ -90,7 +90,7 @@
 
 .fish3 {
     width: 60px;
-    height: 15px;
+    height: 115px;
     top: 15px;
     right: 15px;
     animation: fish3Move 10s infinite;
@@ -126,26 +126,26 @@
 .bubble3 {
     width: 25px;
     height: 35px;
-    top: 80px;
+    top: 180px;
     left: 26px;
 }
 
 .bubble2 {
     width: 12px;
     height: 50px;
-    top: 100px;
+    top: 200px;
     left: 67px;
 }
 
 .bubble3 {
-    top: 70px;
+    top: 170px;
     left: 55%;
 }
 
 .bubble4 {
     width: 17px;
     height: 35px;
-    top: 100px;
+    top: 200px;
     right: 35px;
 }
 

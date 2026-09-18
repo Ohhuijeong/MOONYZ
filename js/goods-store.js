@@ -1,3 +1,13 @@
+const gnbs = document.querySelectorAll('.goods-shop-gnb a');
+gnbs.forEach((gnb) => {
+    gnb.addEventListener('click', () => {
+        gnbs.forEach((item) => {
+            item.classList.remove('on')
+        })
+        gnb.classList.add('on')
+    })
+})
+
 //main-slide swiper
 var swiper = new Swiper('.mySwiper', {
     slidesPerView: 1,

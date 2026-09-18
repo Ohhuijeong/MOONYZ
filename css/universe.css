@@ -37,6 +37,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .uni-inner img {
@@ -46,6 +47,14 @@ section {
 
 .uni-inner .web-book {
     display: block;
+}
+
+.uni-inner span img {
+    display: block;
+    position: absolute;
+    width: 110px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .uni-inner .mobile-book {
